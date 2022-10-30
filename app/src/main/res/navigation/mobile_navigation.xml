@@ -2,4 +2,21 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation" />
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.berrygoodsmoothies.Fragments.HomeFragment"
+        android:label="Berry Good Smoothies Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_smoothie"
+        android:name="com.example.berrygoodsmoothies.Fragments.SmoothieFragment"
+        android:label="Smoothies"
+        tools:layout="@layout/fragment_smoothie" />
+    <fragment
+        android:id="@+id/nav_credits"
+        android:name="com.example.berrygoodsmoothies.Fragments.CreditsFragment"
+        android:label="Credits"
+        tools:layout="@layout/fragment_credits" />
+</navigation>
