@@ -7,7 +7,7 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.berrygoodsmoothies.Fragments.HomeFragment"
-        android:label="Berry Good Smoothies Home"
+        android:label="Home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/nav_smoothie"
@@ -19,4 +19,9 @@
         android:name="com.example.berrygoodsmoothies.Fragments.CreditsFragment"
         android:label="Credits"
         tools:layout="@layout/fragment_credits" />
+    <fragment
+        android:id="@+id/nav_smoothie_cards"
+        android:name="com.example.berrygoodsmoothies.RecyclerView.SmoothieCardsFragment"
+        android:label="Smoothies"
+        tools:layout="@layout/fragment_smoothie_cards" />
 </navigation>
