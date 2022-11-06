@@ -12,6 +12,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.berrygoodsmoothies.R;
 import com.example.berrygoodsmoothies.pojo.Smoothie;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
 public class SmoothieRecyclerViewAdapter extends RecyclerView.Adapter<SmoothieRecyclerViewAdapter.CustomViewHolder> {
@@ -33,6 +35,7 @@ public class SmoothieRecyclerViewAdapter extends RecyclerView.Adapter<SmoothieRe
     @Override
     public void onBindViewHolder(@NonNull SmoothieRecyclerViewAdapter.CustomViewHolder holder, int position) {
         Smoothie smoothies = smoothie.get(position);
+        holder.smoothieCardTitle.setText(smoothies.getSmoothieName());
         holder.smoothieCard.setImageResource(smoothies.getSmoothieCard());
     }
 
@@ -43,10 +46,12 @@ public class SmoothieRecyclerViewAdapter extends RecyclerView.Adapter<SmoothieRe
 
     class CustomViewHolder extends RecyclerView.ViewHolder{
         protected ImageView smoothieCard;
+        protected TextView smoothieCardTitle;
 
         public CustomViewHolder(View view){
             super(view);
             this.smoothieCard = view.findViewById(R.id.smoothieCardImage);
+            this.smoothieCardTitle = view.findViewById(R.id.smoothieNameTitle);
         }
     }
 }

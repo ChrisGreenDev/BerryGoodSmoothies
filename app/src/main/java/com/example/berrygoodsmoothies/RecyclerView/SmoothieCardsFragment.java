@@ -3,6 +3,7 @@ package com.example.berrygoodsmoothies.RecyclerView;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -70,14 +71,14 @@ public class SmoothieCardsFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_smoothie_cards, container, false);
         ArrayList<Smoothie> smoothie = new ArrayList<>();
-        smoothie.add(new Smoothie(R.drawable.carrotsc));
-        smoothie.add(new Smoothie(R.drawable.applesc));
-        smoothie.add(new Smoothie(R.drawable.mangosc));
-        smoothie.add(new Smoothie(R.drawable.greensc));
-        smoothie.add(new Smoothie(R.drawable.strawberrysc));
-        smoothie.add(new Smoothie(R.drawable.bananasc));
-        smoothie.add(new Smoothie(R.drawable.limesc));
-        smoothie.add(new Smoothie(R.drawable.pearsc));
+        smoothie.add(new Smoothie(R.drawable.newcarrotcard, "Carrot Smoothie"));
+        smoothie.add(new Smoothie(R.drawable.newapplecard, "Apple Smoothie"));
+        smoothie.add(new Smoothie(R.drawable.newmangocard, "Mango Smoothie"));
+        smoothie.add(new Smoothie(R.drawable.newgreencard, "Green Smoothie"));
+        smoothie.add(new Smoothie(R.drawable.newstrawberrycard, "Strawberry Smoothie"));
+        smoothie.add(new Smoothie(R.drawable.newbananacard, "Banana Smoothie"));
+        smoothie.add(new Smoothie(R.drawable.newlimecard, "Lime Smoothie"));
+        smoothie.add(new Smoothie(R.drawable.newpearcard, "Pear Smoothie"));
 
         RecyclerView recyclerView = view.findViewById(R.id.recycle);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
