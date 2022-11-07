@@ -18,4 +18,6 @@
     <string name="Email">w0795059@myscc.ca</string>
     <string name="nav_creditsTitle">Credits</string>
     <string name="homeTitleText">Berry Good Smoothies</string>
+    <string name="recyclerViewTitle">OUR SMOOTHIES</string>
+    <string name="recyclerViewDescription">Take a look at our list of smoothies below!</string>
 </resources>
