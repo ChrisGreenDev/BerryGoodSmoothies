@@ -71,14 +71,14 @@ public class SmoothieCardsFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_smoothie_cards, container, false);
         ArrayList<Smoothie> smoothie = new ArrayList<>();
-        smoothie.add(new Smoothie(R.drawable.newcarrotcard, "Carrot Smoothie"));
-        smoothie.add(new Smoothie(R.drawable.newapplecard, "Apple Smoothie"));
-        smoothie.add(new Smoothie(R.drawable.newmangocard, "Mango Smoothie"));
-        smoothie.add(new Smoothie(R.drawable.newgreencard, "Green Smoothie"));
-        smoothie.add(new Smoothie(R.drawable.newstrawberrycard, "Strawberry Smoothie"));
-        smoothie.add(new Smoothie(R.drawable.newbananacard, "Banana Smoothie"));
-        smoothie.add(new Smoothie(R.drawable.newlimecard, "Lime Smoothie"));
-        smoothie.add(new Smoothie(R.drawable.newpearcard, "Pear Smoothie"));
+        smoothie.add(new Smoothie(R.drawable.newcarrotcard, "Super Carrot", "Delicious and good for the eyes!"));
+        smoothie.add(new Smoothie(R.drawable.newapplecard, "The Orchard", "Tastes like fall!"));
+        smoothie.add(new Smoothie(R.drawable.newmangocard, "Tropical Mango Smoothie", "Vacation in a cup!"));
+        smoothie.add(new Smoothie(R.drawable.newgreencard, "Green Smoothie", "Green and delicious!"));
+        smoothie.add(new Smoothie(R.drawable.newstrawberrycard, "Strawberry Bliss", "Can't go wrong with strawberries!"));
+        smoothie.add(new Smoothie(R.drawable.newbananacard, "Banana Smoothie", "How could you say no to banana?"));
+        smoothie.add(new Smoothie(R.drawable.newlimecard, "Citrus Punch", "Lemon-Lime goodness!"));
+        smoothie.add(new Smoothie(R.drawable.newpearcard, "Pear Smoothie", "Three pear smoothie!"));
 
         RecyclerView recyclerView = view.findViewById(R.id.recycle);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
