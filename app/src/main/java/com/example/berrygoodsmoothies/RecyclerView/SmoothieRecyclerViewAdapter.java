@@ -36,6 +36,7 @@ public class SmoothieRecyclerViewAdapter extends RecyclerView.Adapter<SmoothieRe
     public void onBindViewHolder(@NonNull SmoothieRecyclerViewAdapter.CustomViewHolder holder, int position) {
         Smoothie smoothies = smoothie.get(position);
         holder.smoothieCardTitle.setText(smoothies.getSmoothieName());
+        holder.smoothieDescription.setText(smoothies.getSmoothieDescription());
         holder.smoothieCard.setImageResource(smoothies.getSmoothieCard());
     }
 
@@ -47,11 +48,13 @@ public class SmoothieRecyclerViewAdapter extends RecyclerView.Adapter<SmoothieRe
     class CustomViewHolder extends RecyclerView.ViewHolder{
         protected ImageView smoothieCard;
         protected TextView smoothieCardTitle;
+        protected TextView smoothieDescription;
 
         public CustomViewHolder(View view){
             super(view);
             this.smoothieCard = view.findViewById(R.id.smoothieCardImage);
             this.smoothieCardTitle = view.findViewById(R.id.smoothieNameTitle);
+            this.smoothieDescription = view.findViewById(R.id.cardDescription);
         }
     }
 }
