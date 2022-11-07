@@ -10,4 +10,5 @@
     <color name="pcG">#b5e61d</color>
     <color name="pcY">#ffc90c</color>
     <color name="recyclerViewTitleColor">#FF5722</color>
+    <color name="ButtonStartColor">#FFFFFF</color>
 </resources>
