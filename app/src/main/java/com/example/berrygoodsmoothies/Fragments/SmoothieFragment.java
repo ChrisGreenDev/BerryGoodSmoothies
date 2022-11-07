@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 import com.example.berrygoodsmoothies.R;
 
@@ -16,7 +18,6 @@ import com.example.berrygoodsmoothies.R;
  * create an instance of this fragment.
  */
 public class SmoothieFragment extends Fragment {
-
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -63,4 +64,5 @@ public class SmoothieFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_smoothie, container, false);
     }
+
 }
