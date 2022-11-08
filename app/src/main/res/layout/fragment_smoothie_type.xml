@@ -5,7 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ListView.FlavorsFragment">
+    tools:context=".ListView.SmoothieTypeFragment">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:src="@drawable/topscreenimageorange" />
 
     <ListView
         android:id="@+id/flavorListView"
@@ -47,6 +55,6 @@
         android:layout_margin="20dp"
         android:layout_weight="1"
         android:adjustViewBounds="true"
-        android:src="@drawable/ic_baseline_api_24" />
+        android:src="@drawable/newapplecard" />
 
 </LinearLayout>
