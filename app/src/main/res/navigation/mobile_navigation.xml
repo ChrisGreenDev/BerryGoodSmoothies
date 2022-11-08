@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/nav_view_smoothies">
+    app:startDestination="@id/nav_flavors">
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.berrygoodsmoothies.Fragments.HomeFragment"
@@ -42,4 +42,9 @@
         android:name="com.example.berrygoodsmoothies.ViewPager.VPHostFragment"
         android:label="fragment_v_p_host"
         tools:layout="@layout/fragment_v_p_host" />
+    <fragment
+        android:id="@+id/nav_flavors"
+        android:name="com.example.berrygoodsmoothies.ListView.SmoothieTypeFragment"
+        android:label="fragment_smoothie_type"
+        tools:layout="@layout/fragment_smoothie_type" />
 </navigation>

@@ -25,4 +25,5 @@
     <string name="MenuIngredientTitle">Ingredients</string>
     <string name="menuDescription">Please choose the nutrient you\'re looking for below and we will see what we can come up with!</string>
     <string name="UserInputPlaceHolderText">Please enter ingredient...</string>
+    <string name="BananaCard">Banana Smoothie</string>
 </resources>
