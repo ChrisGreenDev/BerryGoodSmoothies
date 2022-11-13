@@ -19,8 +19,8 @@
         android:label="Smoothies"
         tools:layout="@layout/fragment_smoothie" >
         <action
-            android:id="@+id/action_nav_smoothie_to_nav_flavors"
-            app:destination="@id/nav_flavors" />
+            android:id="@+id/action_nav_smoothie_to_nav_clickable_home"
+            app:destination="@id/nav_clickable_home" />
     </fragment>
     <fragment
         android:id="@+id/nav_credits"
@@ -47,4 +47,18 @@
         android:name="com.example.berrygoodsmoothies.ListView.SmoothieTypeFragment"
         android:label="fragment_smoothie_type"
         tools:layout="@layout/fragment_smoothie_type" />
+    <fragment
+        android:id="@+id/nav_clickable_home"
+        android:name="com.example.berrygoodsmoothies.ClickableRecyclerView.ClickableHomeFragment"
+        android:label="fragment_clickable_home"
+        tools:layout="@layout/fragment_clickable_home" >
+        <action
+            android:id="@+id/action_nav_clickable_home_to_nav_detailed"
+            app:destination="@id/nav_detailed" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_detailed"
+        android:name="com.example.berrygoodsmoothies.ClickableRecyclerView.MenuItemDetailedFragment"
+        android:label="fragment_menu_item_detailed"
+        tools:layout="@layout/fragment_menu_item_detailed" />
 </navigation>

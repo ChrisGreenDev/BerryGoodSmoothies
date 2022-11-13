@@ -70,7 +70,7 @@ public class SmoothieFragment extends Fragment {
         potassiumButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Navigation.findNavController(view).navigate(R.id.action_nav_smoothie_to_nav_flavors);
+                Navigation.findNavController(view).navigate(R.id.action_nav_smoothie_to_nav_clickable_home);
             }
         });
 
