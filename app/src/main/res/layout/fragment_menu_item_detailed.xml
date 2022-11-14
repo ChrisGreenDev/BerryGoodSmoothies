@@ -8,6 +8,13 @@
     tools:context=".ClickableRecyclerView.MenuItemDetailedFragment">
 
 
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/topscreenimageorange" />
+
     <TextView
         android:id="@+id/smoothieName"
         android:layout_width="match_parent"
