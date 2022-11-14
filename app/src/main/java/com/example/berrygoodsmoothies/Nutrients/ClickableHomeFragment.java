@@ -69,13 +69,13 @@ public class ClickableHomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_clickable_home, container, false);
         ArrayList<SmoothieItem> smoothieItems = new ArrayList<>();
-        smoothieItems.add(new SmoothieItem(R.drawable.newapplecard,"Orchard Smoothie", "Tastes like fall!"));
-        smoothieItems.add(new SmoothieItem(R.drawable.newbananacard,"Banana Smoothie", "How can you say no to banana?"));
-        smoothieItems.add(new SmoothieItem(R.drawable.newcarrotcard,"Super Carrot", "Delicious and good for the eyes!"));
-        smoothieItems.add(new SmoothieItem(R.drawable.newgreencard,"Green Smoothie", "Not only healthy but tasty too!"));
-        smoothieItems.add(new SmoothieItem(R.drawable.newlimecard,"Citrus Punch", "Lemon-Lime goodness!"));
-        smoothieItems.add(new SmoothieItem(R.drawable.newmangocard,"Tropical Mango Smoothie", "Vacation in a cup!"));
-        smoothieItems.add(new SmoothieItem(R.drawable.newpearcard,"Pear Smoothie", "Three pear smoothie!"));
+        smoothieItems.add(new SmoothieItem(R.drawable.capple,"Orchard Smoothie", "Tastes like fall!"));
+        smoothieItems.add(new SmoothieItem(R.drawable.cbanana,"Banana Smoothie", "How can you say no to banana?"));
+        smoothieItems.add(new SmoothieItem(R.drawable.ccarrot,"Super Carrot", "Delicious and good for the eyes!"));
+        smoothieItems.add(new SmoothieItem(R.drawable.cgreen,"Green Smoothie", "Not only healthy but tasty too!"));
+        smoothieItems.add(new SmoothieItem(R.drawable.clime,"Citrus Punch", "Lemon-Lime goodness!"));
+        smoothieItems.add(new SmoothieItem(R.drawable.cmango,"Tropical Mango Smoothie", "Vacation in a cup!"));
+        smoothieItems.add(new SmoothieItem(R.drawable.cpear,"Pear Smoothie", "Three pear smoothie!"));
 
         CustomMenuAdapter adapter = new CustomMenuAdapter(smoothieItems);
         RecyclerView recyclerView = view.findViewById(R.id.menuRecyclerView);

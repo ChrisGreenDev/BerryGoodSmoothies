@@ -18,17 +18,17 @@
     <string name="Email">w0795059@myscc.ca</string>
     <string name="nav_creditsTitle">Credits</string>
     <string name="homeTitleText">Berry Good Smoothies</string>
-    <string name="recyclerViewTitle">OUR SMOOTHIES</string>
+    <string name="recyclerViewTitle">Our Smoothies</string>
     <string name="recyclerViewDescription">Take a look at our list of smoothies below!</string>
-    <string name="HomeScreenDescription">Need help eating healthy and getting all the nutrients you\'re looking for? With Berry Good Smoothies you not only get a great tasting smoothie but an nutritous one! All you have to do is let us know what nutrient you\'re looking for and we will do the rest. To get started please click the start button below.</string>
+    <string name="HomeScreenDescription">Need help eating healthy and getting all the nutrients you\'re looking for? With Berry Good Smoothies you not only get a great tasting smoothie but an nutritious one! All you have to do is let us know what nutrient you\'re looking for and we will do the rest. To get started, please click the start button below.</string>
     <string name="StartButton">START</string>
     <string name="MenuIngredientTitle">Ingredients</string>
     <string name="menuDescription">Please choose the nutrient you\'re looking for below and we will see what we can come up with!</string>
     <string name="UserInputPlaceHolderText">Please enter ingredient...</string>
     <string name="BananaCard">Banana Smoothie</string>
-    <string name="IronTitle">IRON</string>
-    <string name="CalciumTitle">CALCIUM</string>
-    <string name="PotassiumTitle">POTASSIUM</string>
-    <string name="VitaminATitle">VITAMIN A</string>
-    <string name="VitaminCTitle">VITAMIN C</string>
+    <string name="IronTitle">Iron</string>
+    <string name="CalciumTitle">Calcium</string>
+    <string name="PotassiumTitle">Potassium</string>
+    <string name="VitaminATitle">Vitamin A</string>
+    <string name="VitaminCTitle">Vitamin C</string>
 </resources>

@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:src="@drawable/topscreenimageorange" />
+        android:src="@drawable/topimage" />
 
     <TextView
         android:id="@+id/menuTitle"
@@ -33,7 +33,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:lineSpacingExtra="10sp"
-        android:text="@string/menuDescription" />
+        android:text="@string/menuDescription"
+        android:textAlignment="center" />
 
     <Button
         android:id="@+id/potassiumButton"

@@ -62,7 +62,7 @@
     <fragment
         android:id="@+id/nav_clickable_home"
         android:name="com.example.berrygoodsmoothies.Nutrients.ClickableHomeFragment"
-        android:label="fragment_clickable_home"
+        android:label="Smoothie Choices"
         tools:layout="@layout/fragment_clickable_home" >
         <action
             android:id="@+id/action_nav_clickable_home_to_nav_detailed"
@@ -71,12 +71,12 @@
     <fragment
         android:id="@+id/nav_detailed"
         android:name="com.example.berrygoodsmoothies.ClickableRecyclerView.MenuItemDetailedFragment"
-        android:label="fragment_menu_item_detailed"
+        android:label="Recipe"
         tools:layout="@layout/fragment_menu_item_detailed" />
     <fragment
         android:id="@+id/nav_vitamin_c"
         android:name="com.example.berrygoodsmoothies.Nutrients.VitaminCFragment"
-        android:label="fragment_vitamin_c"
+        android:label="Vitamin C Nutrients"
         tools:layout="@layout/fragment_vitamin_c" >
         <action
             android:id="@+id/action_vitaminCFragment_to_nav_detailed"
@@ -85,7 +85,7 @@
     <fragment
         android:id="@+id/nav_calcium"
         android:name="com.example.berrygoodsmoothies.Nutrients.CalciumFragment"
-        android:label="fragment_calcium"
+        android:label="Calcium Nutrients"
         tools:layout="@layout/fragment_calcium" >
         <action
             android:id="@+id/action_calciumFragment_to_nav_detailed"
@@ -94,7 +94,7 @@
     <fragment
         android:id="@+id/nav_vitamin_a"
         android:name="com.example.berrygoodsmoothies.Nutrients.VitaminAFragment"
-        android:label="fragment_vitamin_a"
+        android:label="Vitamin A Nutrients"
         tools:layout="@layout/fragment_vitamin_a" >
         <action
             android:id="@+id/action_nav_vitamin_a_to_nav_detailed"
@@ -103,7 +103,7 @@
     <fragment
         android:id="@+id/nav_iron"
         android:name="com.example.berrygoodsmoothies.Nutrients.IronFragment"
-        android:label="fragment_iron"
+        android:label="Iron Nutrients"
         tools:layout="@layout/fragment_iron" >
         <action
             android:id="@+id/action_nav_iron_to_nav_detailed"
