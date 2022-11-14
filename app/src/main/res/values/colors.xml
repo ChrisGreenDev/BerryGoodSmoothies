@@ -11,4 +11,6 @@
     <color name="pcY">#ffc90c</color>
     <color name="recyclerViewTitleColor">#FF5722</color>
     <color name="ButtonStartColor">#FFFFFF</color>
+    <color name="titleColor">#000000</color>
+    <color name="orangeColor">#FFFF5722</color>
 </resources>

@@ -8,11 +8,11 @@
     tools:context=".ViewPager.PotassiumFragment">
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/imageView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:src="@drawable/topscreenimageorange" />
+        android:src="@drawable/topimage" />
 
     <TextView
         android:id="@+id/viewPagerTitle"

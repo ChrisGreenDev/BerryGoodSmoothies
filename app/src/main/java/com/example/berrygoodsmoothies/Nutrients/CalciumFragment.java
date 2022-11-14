@@ -69,6 +69,7 @@ public class CalciumFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_calcium, container, false);
         ArrayList<SmoothieItem> smoothieItems = new ArrayList<>();
+        ArrayList<SmoothieItem> smoothieItems1 = new ArrayList<>();
         smoothieItems.add(new SmoothieItem(R.drawable.newapplecard,"Orchard Smoothie", "Tastes like fall!"));
         smoothieItems.add(new SmoothieItem(R.drawable.newbananacard,"Banana Smoothie", "How can you say no to banana?"));
         smoothieItems.add(new SmoothieItem(R.drawable.newcarrotcard,"Super Carrot", "Delicious and good for the eyes!"));
@@ -77,10 +78,13 @@ public class CalciumFragment extends Fragment {
         smoothieItems.add(new SmoothieItem(R.drawable.newpearcard,"Pear Smoothie", "Three pear smoothie!"));
         smoothieItems.add(new SmoothieItem(R.drawable.newstrawberrycard,"Strawberry Bliss", "Can't go wrong with strawberries!"));
 
+        smoothieItems1.add(new SmoothieItem(R.drawable.newstrawberrycard,"Strawberry Bliss", "Test1"));
+
         CustomMenuAdapterCalcium adapter = new CustomMenuAdapterCalcium(smoothieItems);
         RecyclerView recyclerView = view.findViewById(R.id.menuRecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(adapter);
+
 
 
         return view;

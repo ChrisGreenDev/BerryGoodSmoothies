@@ -15,7 +15,9 @@
         android:fontFamily="@font/baloo"
         android:text="TextView"
         android:textAlignment="center"
-        android:textSize="@dimen/titleSize" />
+        android:textColor="@color/titleColor"
+        android:textSize="@dimen/titleSize"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/sDescription"
@@ -31,6 +33,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
         android:adjustViewBounds="true"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"/>
 
 </LinearLayout>

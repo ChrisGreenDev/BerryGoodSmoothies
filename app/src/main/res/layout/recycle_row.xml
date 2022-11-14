@@ -15,7 +15,7 @@
         android:fontFamily="@font/baloo"
         android:text="TextView"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="@color/titleColor"
         android:textSize="@dimen/titleSize"
         android:textStyle="bold" />
 
