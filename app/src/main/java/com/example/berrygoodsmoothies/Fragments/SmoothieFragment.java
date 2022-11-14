@@ -78,7 +78,7 @@ public class SmoothieFragment extends Fragment {
         vitaminCButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Navigation.findNavController(view).navigate(R.id.action_nav_smoothie_to_vitaminCFragment);
             }
         });
 
@@ -86,7 +86,7 @@ public class SmoothieFragment extends Fragment {
         vitaminAButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Navigation.findNavController(view).navigate(R.id.action_nav_smoothie_to_nav_vitamin_a);
             }
         });
 
@@ -94,7 +94,7 @@ public class SmoothieFragment extends Fragment {
         ironButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Navigation.findNavController(view).navigate(R.id.action_nav_smoothie_to_nav_iron);
             }
         });
 
@@ -102,7 +102,7 @@ public class SmoothieFragment extends Fragment {
         calciumButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Navigation.findNavController(view).navigate(R.id.action_nav_smoothie_to_calciumFragment);
             }
         });
         return view;

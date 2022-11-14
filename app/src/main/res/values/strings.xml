@@ -26,4 +26,9 @@
     <string name="menuDescription">Please choose the nutrient you\'re looking for below and we will see what we can come up with!</string>
     <string name="UserInputPlaceHolderText">Please enter ingredient...</string>
     <string name="BananaCard">Banana Smoothie</string>
+    <string name="IronTitle">IRON</string>
+    <string name="CalciumTitle">CALCIUM</string>
+    <string name="PotassiumTitle">POTASSIUM</string>
+    <string name="VitaminATitle">VITAMIN A</string>
+    <string name="VitaminCTitle">VITAMIN C</string>
 </resources>

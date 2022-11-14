@@ -1,6 +1,5 @@
-package com.example.berrygoodsmoothies.ClickableRecyclerView;
+package com.example.berrygoodsmoothies.CustomMenuAdapters;
 
-import android.media.Image;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,14 +11,12 @@ import androidx.annotation.NonNull;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.berrygoodsmoothies.ClickableRecyclerView.SmoothieItem;
 import com.example.berrygoodsmoothies.R;
-import com.example.berrygoodsmoothies.pojo.Smoothie;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
-public class CustomMenuAdapter extends RecyclerView.Adapter<CustomMenuAdapter.CustomViewHolder>{
+public class CustomMenuAdapterIron extends RecyclerView.Adapter<CustomMenuAdapterIron.CustomViewHolder>{
 
     @NonNull
     @Override
@@ -30,7 +27,7 @@ public class CustomMenuAdapter extends RecyclerView.Adapter<CustomMenuAdapter.Cu
 
     ArrayList<SmoothieItem> smoothieItems;
 
-    public CustomMenuAdapter(ArrayList<SmoothieItem> smoothieItems){
+    public CustomMenuAdapterIron(ArrayList<SmoothieItem> smoothieItems){
         this.smoothieItems = smoothieItems;
     }
 
@@ -67,7 +64,7 @@ public class CustomMenuAdapter extends RecyclerView.Adapter<CustomMenuAdapter.Cu
             bundle.putString("NAME", currentItem.getName());
             bundle.putInt("DRAWABLE",currentItem.getDrawable());
             bundle.putString("INGREDIENTS",currentItem.getIngredients());
-            Navigation.findNavController(v).navigate(R.id.action_nav_clickable_home_to_nav_detailed, bundle);
+            Navigation.findNavController(v).navigate(R.id.action_nav_iron_to_nav_detailed, bundle);
         }
     }
 }
