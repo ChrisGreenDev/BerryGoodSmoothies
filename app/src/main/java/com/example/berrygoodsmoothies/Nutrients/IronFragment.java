@@ -1,4 +1,4 @@
-package com.example.berrygoodsmoothies.ClickableRecyclerView;
+package com.example.berrygoodsmoothies.Nutrients;
 
 import android.os.Bundle;
 
@@ -10,16 +10,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.berrygoodsmoothies.CustomMenuAdapters.CustomMenuAdapter;
+import com.example.berrygoodsmoothies.ClickableRecyclerView.SmoothieItem;
+import com.example.berrygoodsmoothies.CustomMenuAdapters.CustomMenuAdapterIron;
 import com.example.berrygoodsmoothies.R;
 
 import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ClickableHomeFragment#newInstance} factory method to
+ * Use the {@link IronFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ClickableHomeFragment extends Fragment {
+public class IronFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -30,7 +33,7 @@ public class ClickableHomeFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public ClickableHomeFragment() {
+    public IronFragment() {
         // Required empty public constructor
     }
 
@@ -40,11 +43,11 @@ public class ClickableHomeFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ClickableHomeFragment.
+     * @return A new instance of fragment IronFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ClickableHomeFragment newInstance(String param1, String param2) {
-        ClickableHomeFragment fragment = new ClickableHomeFragment();
+    public static IronFragment newInstance(String param1, String param2) {
+        IronFragment fragment = new IronFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -64,16 +67,13 @@ public class ClickableHomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_clickable_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_iron, container, false);
         ArrayList<SmoothieItem> smoothieItems = new ArrayList<>();
-        smoothieItems.add(new SmoothieItem(R.drawable.newbananacard,"Banana Smoothie", "A banana smoothie."));
-        smoothieItems.add(new SmoothieItem(R.drawable.newbananacard,"Banana Smoothie", "A banana smoothie."));
-        smoothieItems.add(new SmoothieItem(R.drawable.newbananacard,"Banana Smoothie", "A banana smoothie."));
-        smoothieItems.add(new SmoothieItem(R.drawable.newbananacard,"Banana Smoothie", "A banana smoothie."));
-        smoothieItems.add(new SmoothieItem(R.drawable.newbananacard,"Banana Smoothie", "A banana smoothie."));
+        smoothieItems.add(new SmoothieItem(R.drawable.newcarrotcard,"Super Carrot", "Delicious and good for the eyes!"));
+        smoothieItems.add(new SmoothieItem(R.drawable.newgreencard,"Green Smoothie", "Not only healthy but tasty too!"));
+        smoothieItems.add(new SmoothieItem(R.drawable.newstrawberrycard,"Strawberry Bliss", "Can't go wrong with strawberries!"));
 
-        CustomMenuAdapter adapter = new CustomMenuAdapter(smoothieItems);
+        CustomMenuAdapterIron adapter = new CustomMenuAdapterIron(smoothieItems);
         RecyclerView recyclerView = view.findViewById(R.id.menuRecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(adapter);

@@ -21,6 +21,18 @@
         <action
             android:id="@+id/action_nav_smoothie_to_nav_clickable_home"
             app:destination="@id/nav_clickable_home" />
+        <action
+            android:id="@+id/action_nav_smoothie_to_vitaminCFragment"
+            app:destination="@id/nav_vitamin_c" />
+        <action
+            android:id="@+id/action_nav_smoothie_to_calciumFragment"
+            app:destination="@id/nav_calcium" />
+        <action
+            android:id="@+id/action_nav_smoothie_to_nav_vitamin_a"
+            app:destination="@id/nav_vitamin_a" />
+        <action
+            android:id="@+id/action_nav_smoothie_to_nav_iron"
+            app:destination="@id/nav_iron" />
     </fragment>
     <fragment
         android:id="@+id/nav_credits"
@@ -49,7 +61,7 @@
         tools:layout="@layout/fragment_smoothie_type" />
     <fragment
         android:id="@+id/nav_clickable_home"
-        android:name="com.example.berrygoodsmoothies.ClickableRecyclerView.ClickableHomeFragment"
+        android:name="com.example.berrygoodsmoothies.Nutrients.ClickableHomeFragment"
         android:label="fragment_clickable_home"
         tools:layout="@layout/fragment_clickable_home" >
         <action
@@ -61,4 +73,40 @@
         android:name="com.example.berrygoodsmoothies.ClickableRecyclerView.MenuItemDetailedFragment"
         android:label="fragment_menu_item_detailed"
         tools:layout="@layout/fragment_menu_item_detailed" />
+    <fragment
+        android:id="@+id/nav_vitamin_c"
+        android:name="com.example.berrygoodsmoothies.Nutrients.VitaminCFragment"
+        android:label="fragment_vitamin_c"
+        tools:layout="@layout/fragment_vitamin_c" >
+        <action
+            android:id="@+id/action_vitaminCFragment_to_nav_detailed"
+            app:destination="@id/nav_detailed" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_calcium"
+        android:name="com.example.berrygoodsmoothies.Nutrients.CalciumFragment"
+        android:label="fragment_calcium"
+        tools:layout="@layout/fragment_calcium" >
+        <action
+            android:id="@+id/action_calciumFragment_to_nav_detailed"
+            app:destination="@id/nav_detailed" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_vitamin_a"
+        android:name="com.example.berrygoodsmoothies.Nutrients.VitaminAFragment"
+        android:label="fragment_vitamin_a"
+        tools:layout="@layout/fragment_vitamin_a" >
+        <action
+            android:id="@+id/action_nav_vitamin_a_to_nav_detailed"
+            app:destination="@id/nav_detailed" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_iron"
+        android:name="com.example.berrygoodsmoothies.Nutrients.IronFragment"
+        android:label="fragment_iron"
+        tools:layout="@layout/fragment_iron" >
+        <action
+            android:id="@+id/action_nav_iron_to_nav_detailed"
+            app:destination="@id/nav_detailed" />
+    </fragment>
 </navigation>

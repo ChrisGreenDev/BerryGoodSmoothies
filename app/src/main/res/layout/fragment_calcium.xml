@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Nutrients.ClickableHomeFragment">
+    tools:context=".Nutrients.CalciumFragment">
 
     <TextView
-        android:id="@+id/potassiumTitle"
+        android:id="@+id/calciumTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
         android:fontFamily="@font/baloo"
-        android:text="@string/PotassiumTitle"
+        android:text="@string/CalciumTitle"
         android:textAlignment="center"
         android:textColor="#FF5722"
         android:textSize="@dimen/titleSize"
