@@ -3,7 +3,7 @@
     <style name="Theme.BerryGoodSmoothies" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#FFFF5722</item>
-        <item name="colorPrimaryVariant">@color/pcG</item>
+        <item name="colorPrimaryVariant">#FFFF5722</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/pcY</item>

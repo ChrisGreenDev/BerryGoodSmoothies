@@ -8,4 +8,5 @@
     <dimen name="titleSize">30sp</dimen>
     <dimen name="SmoothieCardTitle">20sp</dimen>
     <dimen name="ButtonStartSize">20sp</dimen>
+    <dimen name="font_size">18sp</dimen>
 </resources>

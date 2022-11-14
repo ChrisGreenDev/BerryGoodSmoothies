@@ -9,11 +9,11 @@
 
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:src="@drawable/topscreenimage" />
+        android:src="@drawable/topscreenimageorange" />
 
     <TextView
         android:id="@+id/menuTitle"
@@ -34,4 +34,66 @@
         android:layout_margin="20dp"
         android:lineSpacingExtra="10sp"
         android:text="@string/menuDescription" />
+
+    <Button
+        android:id="@+id/potassiumButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="80dp"
+        android:layout_weight="2"
+        android:fontFamily="@font/baloo"
+        android:text="potassium"
+        app:cornerRadius="50dp" />
+
+    <Button
+        android:id="@+id/vitaminCButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="80dp"
+        android:layout_weight="2"
+        android:fontFamily="@font/baloo"
+        android:text="Vitamin C"
+        app:cornerRadius="50dp" />
+
+    <Button
+        android:id="@+id/calciumButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="80dp"
+        android:layout_weight="2"
+        android:fontFamily="@font/baloo"
+        android:text="Calcium"
+        app:cornerRadius="50dp" />
+
+    <Button
+        android:id="@+id/vitaminAButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="80dp"
+        android:layout_weight="2"
+        android:fontFamily="@font/baloo"
+        android:text="Vitamin A"
+        app:cornerRadius="50dp" />
+
+    <Button
+        android:id="@+id/ironButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="2"
+        android:fontFamily="@font/baloo"
+        android:text="Iron"
+        app:cornerRadius="50dp" />
+
 </LinearLayout>

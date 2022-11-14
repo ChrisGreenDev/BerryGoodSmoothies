@@ -3,10 +3,14 @@ package com.example.berrygoodsmoothies.Fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.Spinner;
 
 import com.example.berrygoodsmoothies.R;
 
@@ -16,7 +20,6 @@ import com.example.berrygoodsmoothies.R;
  * create an instance of this fragment.
  */
 public class SmoothieFragment extends Fragment {
-
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -61,6 +64,48 @@ public class SmoothieFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_smoothie, container, false);
+        View view = inflater.inflate(R.layout.fragment_smoothie, container, false);
+
+        Button potassiumButton = view.findViewById(R.id.potassiumButton);
+        potassiumButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_nav_smoothie_to_nav_clickable_home);
+            }
+        });
+
+        Button vitaminCButton = view.findViewById(R.id.vitaminCButton);
+        vitaminCButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        Button vitaminAButton = view.findViewById(R.id.vitaminAButton);
+        vitaminAButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        Button ironButton = view.findViewById(R.id.ironButton);
+        ironButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        Button calciumButton = view.findViewById(R.id.calciumButton);
+        calciumButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        return view;
     }
+
 }
