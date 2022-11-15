@@ -6,9 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.Switch;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
@@ -87,7 +85,7 @@ public class FlavorsFragment extends Fragment {
         flavors.add(new Flavors("Strawberry Lemonade Smoothie", "A fresh and tasty fruit smoothie with a little zing from the lemon!", R.drawable.limejar));
         flavors.add(new Flavors("Mango Smoothie", "A tropical flavored smoothie.", R.drawable.mangojar));
         flavors.add(new Flavors("Green Smoothie", "A smoothie packed with vegetables. A healthy alternative.", R.drawable.greenjar));
-        flavors.add(new Flavors("PassionFruit Smoothie", "A smoothie that tastes as good as it looks.", R.drawable.jartest3));
+        flavors.add(new Flavors("PassionFruit Smoothie", "A smoothie that tastes as good as it looks.", R.drawable.pearjar));
         flavors.add(new Flavors("Orchard Smoothie", "An apple explosion", R.drawable.applejar));
         flavors.add(new Flavors("Custom Smoothie", "Your smoothie, your way.", R.drawable.bananajar));
 
