@@ -69,9 +69,35 @@ public class IronFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_iron, container, false);
         ArrayList<SmoothieItem> smoothieItems = new ArrayList<>();
-        smoothieItems.add(new SmoothieItem(R.drawable.carrotjar,"Super Carrot", "Delicious and good for the eyes!"));
-        smoothieItems.add(new SmoothieItem(R.drawable.greenjar,"Green Smoothie", "Not only healthy but tasty too!"));
-        smoothieItems.add(new SmoothieItem(R.drawable.applejar,"Strawberry Bliss", "Can't go wrong with strawberries!"));
+
+        smoothieItems.add(new SmoothieItem(R.drawable.carrotjar, R.drawable.ccarrot, "Super Carrot", "Delicious and good for the eyes!", "\n\n1 cup chopped carrots steamed and cooled if you do not have a high-power blender or to make extra smooth for kids\n\n" +
+                "1/2 cup frozen sliced banana\n\n" +
+                "1/2 cup plain Greek yogurt\n\n" +
+                "1/2 cup unsweetened vanilla cashew milk unsweetened vanilla almond milk, or milk of your choice\n\n" +
+                "1/4 cup frozen diced pineapple\n\n" +
+                "2 tablespoons toasted walnuts\n\n" +
+                "1 tablespoon flaked coconut optional\n\n" +
+                "1/4 teaspoon cinnamon\n\n" +
+                "Pinch nutmeg\n\n" +
+                "shredded carrots, coconut, crushed walnuts for topping\n\n"));
+
+        smoothieItems.add(new SmoothieItem(R.drawable.greenjar, R.drawable.cgreen, "Green Smoothie", "Not only healthy but tasty too!", "\n\n1 ½ cups unsweetened almond milk\n\n" +
+                "2 cups spinach* frozen\n\n" +
+                "1 medium banana frozen\n\n" +
+                "1 cup fruit of choice**\n\n" +
+                "Optional add ins: protein powder bee pollen, collagen, etc.\n\n"));
+
+        smoothieItems.add(new SmoothieItem(R.drawable.applejar, R.drawable.capple, "Orchard Smoothie", "Tastes like fall!", "\n\n1 medium sweet apple washed with peel on\n\n" +
+                "1/4 cup unsweetened almond milk\n\n" +
+                "1/4 cup rolled oats\n\n" +
+                "1/2 cup chopped frozen banana about ½ of a large banana or 8, ¾-inch slices\n\n" +
+                "1 tablespoon peanut butter or almond butter\n\n" +
+                "1/2 tablespoon pure maple syrup plus additional to taste\n\n" +
+                "1 teaspoon pure vanilla extract\n\n" +
+                "1/4 teaspoon ground cinnamon plus additional for serving\n\n" +
+                "Pinch ground nutmeg\n\n" +
+                "Pinch ground allspice\n\n" +
+                "Small handful ice\n\n"));
 
         CustomMenuAdapterIron adapter = new CustomMenuAdapterIron(smoothieItems);
         RecyclerView recyclerView = view.findViewById(R.id.menuRecyclerView);

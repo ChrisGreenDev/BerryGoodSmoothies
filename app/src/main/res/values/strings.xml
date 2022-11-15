@@ -31,4 +31,5 @@
     <string name="PotassiumTitle">Potassium</string>
     <string name="VitaminATitle">Vitamin A</string>
     <string name="VitaminCTitle">Vitamin C</string>
+    <string name="IngredientTitle">Ingredients</string>
 </resources>
