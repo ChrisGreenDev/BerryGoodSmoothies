@@ -24,11 +24,14 @@ public class CustomViewPagerAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         //  position = position % 5;
         switch (position){
-            case 0 : return PotassiumFragment.newInstance("Banana Smoothie", R.drawable.newbananacard);
-            case 1 : return PotassiumFragment.newInstance("Apple Smoothie", R.drawable.newapplecard);
-            case 2 : return PotassiumFragment.newInstance("Lime Smoothie", R.drawable.newlimecard);
-            case 3 : return PotassiumFragment.newInstance("Strawberry Smoothie", R.drawable.newstrawberrycard);
-            case 4 : return PotassiumFragment.newInstance("Pear Smoothie", R.drawable.newpearcard);
+            case 0 : return PotassiumFragment.newInstance("Banana Smoothie", R.drawable.bananajar);
+            case 1 : return PotassiumFragment.newInstance("Apple Smoothie", R.drawable.applejar);
+            case 2 : return PotassiumFragment.newInstance("Lime Smoothie", R.drawable.limejar);
+            case 3 : return PotassiumFragment.newInstance("Strawberry Smoothie", R.drawable.applejar);
+            case 4 : return PotassiumFragment.newInstance("Pear Smoothie", R.drawable.jartest3);
+            case 5 : return PotassiumFragment.newInstance("Carrot Smoothie", R.drawable.carrotjar);
+            case 6 : return PotassiumFragment.newInstance("Mango Smoothie", R.drawable.mangojar);
+            case 7 : return PotassiumFragment.newInstance("Green Smoothie", R.drawable.greenjar);
             default : return PotassiumFragment.newInstance("Looks like we dont have any smoothies that match.", R.drawable.ic_baseline_error_24);
         }
     }
@@ -39,6 +42,6 @@ public class CustomViewPagerAdapter extends FragmentStateAdapter {
         // return Integer.MAX_VALUE;
         Calendar now = new Calendar.Builder().setDate(2022,12,12).build();
         now.getTimeInMillis();
-        return 5;
+        return 8;
     }
 }

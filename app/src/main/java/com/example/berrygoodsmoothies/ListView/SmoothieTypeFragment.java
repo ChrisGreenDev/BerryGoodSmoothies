@@ -78,11 +78,13 @@ public class SmoothieTypeFragment extends Fragment {
         listViewImg = view.findViewById(R.id.listViewImage);
         listViewTtl = view.findViewById(R.id.listViewTitle);
         ArrayList<SmoothieType> flavors = new ArrayList<>();
-        flavors.add(new SmoothieType(R.drawable.newbananacard,"Banana Smoothie"));
-        flavors.add(new SmoothieType(R.drawable.newapplecard,"Banana Smoothie"));
-        flavors.add(new SmoothieType(R.drawable.newstrawberrycard,"Banana Smoothie"));
-        flavors.add(new SmoothieType(R.drawable.newmangocard,"Banana Smoothie"));
-        flavors.add(new SmoothieType(R.drawable.newpearcard,"Banana Smoothie"));
+        flavors.add(new SmoothieType(R.drawable.bananajar,"Banana Smoothie"));
+        flavors.add(new SmoothieType(R.drawable.applejar,"Apple Smoothie"));
+        flavors.add(new SmoothieType(R.drawable.applejar,"Strawberry Smoothie"));
+        flavors.add(new SmoothieType(R.drawable.mangojar,"Mango Smoothie"));
+        flavors.add(new SmoothieType(R.drawable.jartest3,"Pear Smoothie"));
+        flavors.add(new SmoothieType(R.drawable.greentopscreenimage,"Green Smoothie"));
+        flavors.add(new SmoothieType(R.drawable.carrotjar,"Carrot Smoothie"));
 
 
         listView.setAdapter(new CustomListViewAdapter(getContext(), flavors));

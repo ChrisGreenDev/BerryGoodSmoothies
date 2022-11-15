@@ -7,18 +7,13 @@
     android:orientation="vertical"
     tools:context=".Nutrients.VitaminCFragment">
 
-    <TextView
-        android:id="@+id/vitaminCTitle"
+
+    <ImageView
+        android:id="@+id/imageView12"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
-        android:fontFamily="@font/baloo"
-        android:text="@string/VitaminCTitle"
-        android:textAlignment="center"
-        android:textColor="#FF5722"
-        android:textSize="@dimen/titleSize"
-        android:textStyle="bold" />
-
+        android:adjustViewBounds="true"
+        android:src="@drawable/topimage" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/menuRecyclerView"

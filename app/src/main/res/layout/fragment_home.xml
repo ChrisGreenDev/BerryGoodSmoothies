@@ -18,7 +18,10 @@
         android:id="@+id/homeTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
         android:fontFamily="@font/baloo"
         android:text="@string/homeTitleText"
         android:textAlignment="center"
@@ -48,6 +51,7 @@
         android:text="@string/StartButton"
         android:textColor="@color/ButtonStartColor"
         android:textSize="@dimen/ButtonStartSize"
+        android:textStyle="bold"
         app:cornerRadius="50dp" />
 
 </LinearLayout>
