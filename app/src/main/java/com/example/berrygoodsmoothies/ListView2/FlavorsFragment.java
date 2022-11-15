@@ -83,13 +83,13 @@ public class FlavorsFragment extends Fragment {
         listView = view.findViewById(R.id.flavorListView);
         ArrayList<Flavors> flavors = new ArrayList<>();
         ArrayList<Flavors> flavors2 = new ArrayList<>();
-        flavors.add(new Flavors("Banana Smoothie", "A healthy banana smoothie full of potassium", R.drawable.newbananacard));
-        flavors.add(new Flavors("Strawberry Lemonade Smoothie", "A fresh and tasty fruit smoothie with a little zing from the lemon!", R.drawable.newlimecard));
-        flavors.add(new Flavors("Mango Smoothie", "A tropical flavored smoothie.", R.drawable.newmangocard));
-        flavors.add(new Flavors("Green Smoothie", "A smoothie packed with vegetables. A healthy alternative.", R.drawable.newgreencard));
-        flavors.add(new Flavors("PassionFruit Smoothie", "A smoothie that tastes as good as it looks.", R.drawable.newpearcard));
-        flavors.add(new Flavors("Orchard Smoothie", "An apple explosion", R.drawable.newapplecard));
-        flavors.add(new Flavors("Custom Smoothie", "Your smoothie, your way.", R.drawable.newbananacard));
+        flavors.add(new Flavors("Banana Smoothie", "A healthy banana smoothie full of potassium", R.drawable.bananajar));
+        flavors.add(new Flavors("Strawberry Lemonade Smoothie", "A fresh and tasty fruit smoothie with a little zing from the lemon!", R.drawable.limejar));
+        flavors.add(new Flavors("Mango Smoothie", "A tropical flavored smoothie.", R.drawable.mangojar));
+        flavors.add(new Flavors("Green Smoothie", "A smoothie packed with vegetables. A healthy alternative.", R.drawable.greenjar));
+        flavors.add(new Flavors("PassionFruit Smoothie", "A smoothie that tastes as good as it looks.", R.drawable.jartest3));
+        flavors.add(new Flavors("Orchard Smoothie", "An apple explosion", R.drawable.applejar));
+        flavors.add(new Flavors("Custom Smoothie", "Your smoothie, your way.", R.drawable.bananajar));
 
         listView.setAdapter(new CustomListViewAdapterTest(getContext(), flavors));
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

@@ -69,14 +69,14 @@ public class VitaminCFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_vitamin_c, container, false);
         ArrayList<SmoothieItem> smoothieItems = new ArrayList<>();
-        smoothieItems.add(new SmoothieItem(R.drawable.newapplecard,"Orchard Smoothie", "Tastes like fall!"));
-        smoothieItems.add(new SmoothieItem(R.drawable.newbananacard,"Banana Smoothie", "How can you say no to banana?"));
-        smoothieItems.add(new SmoothieItem(R.drawable.newcarrotcard,"Super Carrot", "Delicious and good for the eyes!"));
-        smoothieItems.add(new SmoothieItem(R.drawable.newgreencard,"Green Smoothie", "Not only healthy but tasty too!"));
-        smoothieItems.add(new SmoothieItem(R.drawable.newlimecard,"Citrus Punch", "Lemon-Lime goodness!"));
-        smoothieItems.add(new SmoothieItem(R.drawable.newmangocard,"Tropical Mango Smoothie", "Vacation in a cup!"));
-        smoothieItems.add(new SmoothieItem(R.drawable.newpearcard,"Pear Smoothie", "Three pear smoothie!"));
-        smoothieItems.add(new SmoothieItem(R.drawable.newstrawberrycard,"Strawberry Bliss", "Can't go wrong with strawberries!"));
+        smoothieItems.add(new SmoothieItem(R.drawable.applejar,"Orchard Smoothie", "Tastes like fall!"));
+        smoothieItems.add(new SmoothieItem(R.drawable.bananajar,"Banana Smoothie", "How can you say no to banana?"));
+        smoothieItems.add(new SmoothieItem(R.drawable.carrotjar,"Super Carrot", "Delicious and good for the eyes!"));
+        smoothieItems.add(new SmoothieItem(R.drawable.greenjar,"Green Smoothie", "Not only healthy but tasty too!"));
+        smoothieItems.add(new SmoothieItem(R.drawable.limejar,"Citrus Punch", "Lemon-Lime goodness!"));
+        smoothieItems.add(new SmoothieItem(R.drawable.mangojar,"Tropical Mango Smoothie", "Vacation in a cup!"));
+        smoothieItems.add(new SmoothieItem(R.drawable.jartest3,"Pear Smoothie", "Three pear smoothie!"));
+        smoothieItems.add(new SmoothieItem(R.drawable.applejar,"Strawberry Bliss", "Can't go wrong with strawberries!"));
 
         CustomMenuAdapterVitaminC adapter = new CustomMenuAdapterVitaminC(smoothieItems);
         RecyclerView recyclerView = view.findViewById(R.id.menuRecyclerView);

@@ -46,6 +46,8 @@
         android:layout_weight="2"
         android:fontFamily="@font/baloo"
         android:text="potassium"
+        android:textColor="@color/ButtonStartColor"
+        android:textStyle="bold"
         app:cornerRadius="50dp" />
 
     <Button
@@ -58,6 +60,8 @@
         android:layout_weight="2"
         android:fontFamily="@font/baloo"
         android:text="Vitamin C"
+        android:textColor="@color/ButtonStartColor"
+        android:textStyle="bold"
         app:cornerRadius="50dp" />
 
     <Button
@@ -70,6 +74,8 @@
         android:layout_weight="2"
         android:fontFamily="@font/baloo"
         android:text="Calcium"
+        android:textColor="@color/ButtonStartColor"
+        android:textStyle="bold"
         app:cornerRadius="50dp" />
 
     <Button
@@ -82,6 +88,8 @@
         android:layout_weight="2"
         android:fontFamily="@font/baloo"
         android:text="Vitamin A"
+        android:textColor="@color/ButtonStartColor"
+        android:textStyle="bold"
         app:cornerRadius="50dp" />
 
     <Button
@@ -95,6 +103,8 @@
         android:layout_weight="2"
         android:fontFamily="@font/baloo"
         android:text="Iron"
+        android:textColor="@color/ButtonStartColor"
+        android:textStyle="bold"
         app:cornerRadius="50dp" />
 
 </LinearLayout>

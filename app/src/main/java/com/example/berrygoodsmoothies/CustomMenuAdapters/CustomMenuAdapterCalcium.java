@@ -21,7 +21,7 @@ public class CustomMenuAdapterCalcium extends RecyclerView.Adapter<CustomMenuAda
     @NonNull
     @Override
     public CustomViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.menu_item,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.menu_item2,parent,false);
         return new CustomViewHolder(view);
     }
 

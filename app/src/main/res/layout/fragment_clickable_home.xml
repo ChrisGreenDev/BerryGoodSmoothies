@@ -7,18 +7,13 @@
     android:orientation="vertical"
     tools:context=".Nutrients.ClickableHomeFragment">
 
-    <TextView
-        android:id="@+id/potassiumTitle"
+
+    <ImageView
+        android:id="@+id/imageView9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
-        android:fontFamily="@font/baloo"
-        android:text="@string/PotassiumTitle"
-        android:textAlignment="center"
-        android:textColor="#FF5722"
-        android:textSize="@dimen/titleSize"
-        android:textStyle="bold" />
-
+        android:adjustViewBounds="true"
+        android:src="@drawable/topimage" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/menuRecyclerView"

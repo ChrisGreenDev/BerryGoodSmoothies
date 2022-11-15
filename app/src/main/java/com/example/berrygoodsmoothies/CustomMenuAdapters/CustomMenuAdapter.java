@@ -21,7 +21,7 @@ public class CustomMenuAdapter extends RecyclerView.Adapter<CustomMenuAdapter.Cu
     @NonNull
     @Override
     public CustomViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.menu_item,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.menu_item2,parent,false);
         return new CustomViewHolder(view);
     }
 
@@ -62,8 +62,8 @@ public class CustomMenuAdapter extends RecyclerView.Adapter<CustomMenuAdapter.Cu
             SmoothieItem currentItem = smoothieItems.get(getAdapterPosition());
             Bundle bundle = new Bundle();
             bundle.putString("NAME", currentItem.getName());
-            bundle.putInt("DRAWABLE",currentItem.getDrawable());
-            bundle.putString("INGREDIENTS",currentItem.getIngredients());
+            bundle.putInt("DRAWABLE",currentItem.getDrawable2());
+            bundle.putString("INGREDIENTS",currentItem.getIngredientsList());
             Navigation.findNavController(v).navigate(R.id.action_nav_clickable_home_to_nav_detailed, bundle);
         }
     }
