@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginBottom="25dp"
         android:fontFamily="@font/baloo"
         android:text="@string/recyclerViewDescription"
         android:textAlignment="center" />
@@ -44,5 +44,9 @@
         android:id="@+id/recycle"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layoutAnimation="@anim/layout_animation"/>
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:layoutAnimation="@anim/layout_animation" />
 </LinearLayout>

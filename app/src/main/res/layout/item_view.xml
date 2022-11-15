@@ -23,6 +23,7 @@
         android:id="@+id/listViewImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="25dp"
         android:adjustViewBounds="true"
         tools:srcCompat="@tools:sample/avatars" />
 
