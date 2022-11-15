@@ -20,7 +20,7 @@
     <string name="homeTitleText">Berry Good Smoothies</string>
     <string name="recyclerViewTitle">Our Smoothies</string>
     <string name="recyclerViewDescription">Take a look at our list of smoothies below!</string>
-    <string name="HomeScreenDescription">Need help eating healthy and getting all the nutrients you\'re looking for? With Berry Good Smoothies you not only get a great tasting smoothie but an nutritious one! All you have to do is let us know what nutrient you\'re looking for and we will do the rest. To get started, please click the start button below.</string>
+    <string name="HomeScreenDescription">Need help eating healthy and getting all the nutrients you\'re looking for? With Berry Good Smoothies you not only get a great tasting smoothie but a nutritious one! All you have to do is let us know which nutrient you\'re looking for and we will do the rest. To get started, please click the start button below.</string>
     <string name="StartButton">START</string>
     <string name="MenuIngredientTitle">Ingredients</string>
     <string name="menuDescription">Please choose the nutrient you\'re looking for below and we will see what we can come up with!</string>

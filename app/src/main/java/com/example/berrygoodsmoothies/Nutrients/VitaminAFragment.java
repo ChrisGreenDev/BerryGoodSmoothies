@@ -78,7 +78,7 @@ public class VitaminAFragment extends Fragment {
                 "\n" +
                 "1/4 cup water or milk (dairy or non-dairy)\n" +
                 "\n" +
-                "1 to 2 teaspoons honey, optional\n\n"));
+                "1 to 2 teaspoons honey, optional\n\n", "Serving 1 | Calories 122"));
 
         smoothieItems.add(new SmoothieItem(R.drawable.carrotjar, R.drawable.ccarrot, "Super Carrot", "Delicious and good for the eyes!", "\n\n1 cup chopped carrots steamed and cooled if you do not have a high-power blender or to make extra smooth for kids\n\n" +
                 "1/2 cup frozen sliced banana\n\n" +
@@ -89,18 +89,18 @@ public class VitaminAFragment extends Fragment {
                 "1 tablespoon flaked coconut optional\n\n" +
                 "1/4 teaspoon cinnamon\n\n" +
                 "Pinch nutmeg\n\n" +
-                "shredded carrots, coconut, crushed walnuts for topping\n\n"));
+                "shredded carrots, coconut, crushed walnuts for topping\n\n", "Serving 1 | Calories 343"));
 
         smoothieItems.add(new SmoothieItem(R.drawable.greenjar, R.drawable.cgreen, "Green Smoothie", "Not only healthy but tasty too!", "\n\n1 ½ cups unsweetened almond milk\n\n" +
                 "2 cups spinach* frozen\n\n" +
                 "1 medium banana frozen\n\n" +
                 "1 cup fruit of choice**\n\n" +
-                "Optional add ins: protein powder bee pollen, collagen, etc.\n\n"));
+                "Optional add ins: protein powder bee pollen, collagen, etc.\n\n", "Serving 2 | Calories 202"));
 
         smoothieItems.add(new SmoothieItem(R.drawable.mangojar, R.drawable.cmango, "Tropical Mango Smoothie", "Vacation in a cup!", "\n\n2 fresh mangoes or 2 cups of frozen mango\n\n" +
                 "1 small frozen banana (or half of a large banana), you can use unfrozen if using frozen mango\n\n" +
                 "½ cup milk, dairy or dairy-free\n\n" +
-                "½ cup yogurt, dairy or dairy-free\n\n"));
+                "½ cup yogurt, dairy or dairy-free\n\n", "Serving 2 | Calories 215"));
 
         smoothieItems.add(new SmoothieItem(R.drawable.jartest3, R.drawable.cpear, "Pear Smoothie", "Three pear smoothie!", "\n" +
                 "\n" +
@@ -121,7 +121,7 @@ public class VitaminAFragment extends Fragment {
                 "1 1/2 cups coarsely chopped kale\n" +
                 "\n" +
                 "1 cup ice\n" +
-                "\n"));
+                "\n", "Serving 2 | Calories 296"));
 
         CustomMenuAdapterVitaminA adapter = new CustomMenuAdapterVitaminA(smoothieItems);
         RecyclerView recyclerView = view.findViewById(R.id.menuRecyclerView);

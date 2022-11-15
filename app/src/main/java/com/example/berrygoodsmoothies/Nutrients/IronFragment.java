@@ -79,13 +79,13 @@ public class IronFragment extends Fragment {
                 "1 tablespoon flaked coconut optional\n\n" +
                 "1/4 teaspoon cinnamon\n\n" +
                 "Pinch nutmeg\n\n" +
-                "shredded carrots, coconut, crushed walnuts for topping\n\n"));
+                "shredded carrots, coconut, crushed walnuts for topping\n\n", "Serving 1 | Calories 343"));
 
         smoothieItems.add(new SmoothieItem(R.drawable.greenjar, R.drawable.cgreen, "Green Smoothie", "Not only healthy but tasty too!", "\n\n1 ½ cups unsweetened almond milk\n\n" +
                 "2 cups spinach* frozen\n\n" +
                 "1 medium banana frozen\n\n" +
                 "1 cup fruit of choice**\n\n" +
-                "Optional add ins: protein powder bee pollen, collagen, etc.\n\n"));
+                "Optional add ins: protein powder bee pollen, collagen, etc.\n\n", "Serving 2 | Calories 202"));
 
         smoothieItems.add(new SmoothieItem(R.drawable.applejar, R.drawable.capple, "Orchard Smoothie", "Tastes like fall!", "\n\n1 medium sweet apple washed with peel on\n\n" +
                 "1/4 cup unsweetened almond milk\n\n" +
@@ -97,7 +97,7 @@ public class IronFragment extends Fragment {
                 "1/4 teaspoon ground cinnamon plus additional for serving\n\n" +
                 "Pinch ground nutmeg\n\n" +
                 "Pinch ground allspice\n\n" +
-                "Small handful ice\n\n"));
+                "Small handful ice\n\n", "Serving 1 | Calories 305"));
 
         CustomMenuAdapterIron adapter = new CustomMenuAdapterIron(smoothieItems);
         RecyclerView recyclerView = view.findViewById(R.id.menuRecyclerView);

@@ -7,13 +7,15 @@ public class SmoothieItem {
     private String name;
     private String ingredients;
     private String ingredientsList;
+    private String serving;
 
-    public SmoothieItem(int drawable,int drawable2, String name, String ingredients, String ingredientsList) {
+    public SmoothieItem(int drawable,int drawable2, String name, String ingredients, String ingredientsList, String serving) {
         this.drawable = drawable;
         this.drawable2 = drawable2;
         this.name = name;
         this.ingredients = ingredients;
         this.ingredientsList = ingredientsList;
+        this.serving = serving;
     }
 
     public SmoothieItem(int drawable, String name) {
@@ -65,5 +67,13 @@ public class SmoothieItem {
 
     public void setDrawable2(int drawable2) {
         this.drawable2 = drawable2;
+    }
+
+    public String getServing() {
+        return serving;
+    }
+
+    public void setServing(String serving) {
+        this.serving = serving;
     }
 }

@@ -72,6 +72,8 @@ public class MenuItemDetailedFragment extends Fragment {
             smoothieImage.setImageResource(extras.getInt("DRAWABLE"));
             TextView smoothieIngredients = view.findViewById(R.id.smoothieIngredients);
             smoothieIngredients.setText(extras.getString("INGREDIENTS"));
+            TextView smoothieServing = view.findViewById(R.id.smoothieServing);
+            smoothieServing.setText(extras.getString("SERVING"));
         }
         return view;
     }
