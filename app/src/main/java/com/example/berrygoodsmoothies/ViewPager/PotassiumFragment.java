@@ -67,14 +67,13 @@ public class PotassiumFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_potassium, container, false);
         if(mParam1 != null){
-            TextView textView =   view.findViewById(R.id.viewPagerTitle);
+            TextView textView = view.findViewById(R.id.viewPagerTitle);
             textView.setText(mParam1);
         }
         if(mParam2 != 0){
             ImageView imageView = view.findViewById(R.id.viewPagerImage);
             imageView.setImageResource(mParam2);
         }
-
         return view;
     }
 }

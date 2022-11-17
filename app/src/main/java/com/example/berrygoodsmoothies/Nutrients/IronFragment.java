@@ -69,9 +69,9 @@ public class IronFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_iron, container, false);
         ArrayList<SmoothieItem> smoothieItems = new ArrayList<>();
-        smoothieItems.add(new SmoothieItem(R.drawable.carrotjar, R.drawable.ccarrot, getString(R.string.carrotName), getString(R.string.carrotDescription), getString(R.string.carrotIngredients), getString(R.string.carrotServing)));
-        smoothieItems.add(new SmoothieItem(R.drawable.greenjar, R.drawable.cgreen, getString(R.string.greenName), getString(R.string.greenDescription), getString(R.string.greenIngredients), getString(R.string.greenServing)));
-        smoothieItems.add(new SmoothieItem(R.drawable.applejar, R.drawable.capple, getString(R.string.appleName), getString(R.string.appleDescription), getString(R.string.appleIngredients), getString(R.string.appleServing)));
+        smoothieItems.add(new SmoothieItem(R.drawable.cjar, R.drawable.ccarrot, getString(R.string.carrotName), getString(R.string.carrotDescription), getString(R.string.carrotIngredients), getString(R.string.carrotServing)));
+        smoothieItems.add(new SmoothieItem(R.drawable.gjar, R.drawable.cgreen, getString(R.string.greenName), getString(R.string.greenDescription), getString(R.string.greenIngredients), getString(R.string.greenServing)));
+        smoothieItems.add(new SmoothieItem(R.drawable.ajar, R.drawable.capple, getString(R.string.appleName), getString(R.string.appleDescription), getString(R.string.appleIngredients), getString(R.string.appleServing)));
 
         CustomMenuAdapterIron adapter = new CustomMenuAdapterIron(smoothieItems);
         RecyclerView recyclerView = view.findViewById(R.id.menuRecyclerView);

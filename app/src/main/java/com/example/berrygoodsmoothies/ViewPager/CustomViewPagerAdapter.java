@@ -21,7 +21,7 @@ public class CustomViewPagerAdapter extends FragmentStateAdapter {
     @NonNull
     @Override
     public Fragment createFragment(int position) {
-        //  position = position % 5;
+          position = position % 8;
         switch (position){
             case 0 : return PotassiumFragment.newInstance("Banana Smoothie", R.drawable.bananajar);
             case 1 : return PotassiumFragment.newInstance("Apple Smoothie", R.drawable.applejar);
