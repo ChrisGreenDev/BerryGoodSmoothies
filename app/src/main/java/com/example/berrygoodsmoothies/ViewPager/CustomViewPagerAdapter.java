@@ -23,15 +23,15 @@ public class CustomViewPagerAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
           position = position % 8;
         switch (position){
-            case 0 : return PotassiumFragment.newInstance("Banana Smoothie", R.drawable.bananajar);
-            case 1 : return PotassiumFragment.newInstance("Apple Smoothie", R.drawable.applejar);
-            case 2 : return PotassiumFragment.newInstance("Lime Smoothie", R.drawable.limejar);
-            case 3 : return PotassiumFragment.newInstance("Strawberry Smoothie", R.drawable.applejar);
-            case 4 : return PotassiumFragment.newInstance("Pear Smoothie", R.drawable.pearjar);
-            case 5 : return PotassiumFragment.newInstance("Carrot Smoothie", R.drawable.carrotjar);
-            case 6 : return PotassiumFragment.newInstance("Mango Smoothie", R.drawable.mangojar);
-            case 7 : return PotassiumFragment.newInstance("Green Smoothie", R.drawable.greenjar);
-            default : return PotassiumFragment.newInstance("Looks like we dont have any smoothies that match.", R.drawable.ic_baseline_error_24);
+            case 0 : return CreditScreenFragment.newInstance("Banana Smoothie", R.drawable.bananajar);
+            case 1 : return CreditScreenFragment.newInstance("Apple Smoothie", R.drawable.applejar);
+            case 2 : return CreditScreenFragment.newInstance("Lime Smoothie", R.drawable.limejar);
+            case 3 : return CreditScreenFragment.newInstance("Strawberry Smoothie", R.drawable.applejar);
+            case 4 : return CreditScreenFragment.newInstance("Pear Smoothie", R.drawable.pearjar);
+            case 5 : return CreditScreenFragment.newInstance("Carrot Smoothie", R.drawable.carrotjar);
+            case 6 : return CreditScreenFragment.newInstance("Mango Smoothie", R.drawable.mangojar);
+            case 7 : return CreditScreenFragment.newInstance("Green Smoothie", R.drawable.greenjar);
+            default : return CreditScreenFragment.newInstance("Looks like we dont have any smoothies that match.", R.drawable.ic_baseline_error_24);
         }
     }
 

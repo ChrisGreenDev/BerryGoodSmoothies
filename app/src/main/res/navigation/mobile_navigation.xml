@@ -50,13 +50,13 @@
         tools:layout="@layout/fragment_smoothie_cards" />
     <fragment
         android:id="@+id/potassiumFragment"
-        android:name="com.example.berrygoodsmoothies.ViewPager.PotassiumFragment"
+        android:name="com.example.berrygoodsmoothies.ViewPager.CreditScreenFragment"
         android:label="fragment_potassium"
         tools:layout="@layout/fragment_potassium" />
     <fragment
         android:id="@+id/nav_view_smoothies"
         android:name="com.example.berrygoodsmoothies.ViewPager.VPHostFragment"
-        android:label="fragment_v_p_host"
+        android:label="Credits"
         tools:layout="@layout/fragment_v_p_host" />
     <fragment
         android:id="@+id/nav_flavors"

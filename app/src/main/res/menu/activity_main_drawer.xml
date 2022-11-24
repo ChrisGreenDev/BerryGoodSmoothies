@@ -13,7 +13,7 @@
             android:icon="@drawable/ic_banana_24"
             android:title="@string/menu_smoothie" />
         <item
-            android:id="@+id/nav_credits"
+            android:id="@+id/nav_view_smoothies"
             android:icon="@drawable/ic_baseline_credits_24"
             android:title="@string/nav_creditsTitle" />
     </group>
