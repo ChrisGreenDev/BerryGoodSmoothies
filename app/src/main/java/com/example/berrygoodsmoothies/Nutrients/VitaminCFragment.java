@@ -10,7 +10,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.berrygoodsmoothies.CustomMenuAdapters.CustomMenuAdapter;
 import com.example.berrygoodsmoothies.ClickableRecyclerView.SmoothieItem;
 import com.example.berrygoodsmoothies.CustomMenuAdapters.CustomMenuAdapterVitaminC;
 import com.example.berrygoodsmoothies.R;
@@ -69,86 +68,14 @@ public class VitaminCFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_vitamin_c, container, false);
         ArrayList<SmoothieItem> smoothieItems = new ArrayList<>();
-
-        smoothieItems.add(new SmoothieItem(R.drawable.applejar, R.drawable.capple, "Orchard Smoothie", "Tastes like fall!", "\n\n1 medium sweet apple washed with peel on\n\n" +
-                "1/4 cup unsweetened almond milk\n\n" +
-                "1/4 cup rolled oats\n\n" +
-                "1/2 cup chopped frozen banana about ½ of a large banana or 8, ¾-inch slices\n\n" +
-                "1 tablespoon peanut butter or almond butter\n\n" +
-                "1/2 tablespoon pure maple syrup plus additional to taste\n\n" +
-                "1 teaspoon pure vanilla extract\n\n" +
-                "1/4 teaspoon ground cinnamon plus additional for serving\n\n" +
-                "Pinch ground nutmeg\n\n" +
-                "Pinch ground allspice\n\n" +
-                "Small handful ice\n\n"));
-
-        smoothieItems.add(new SmoothieItem(R.drawable.bananajar, R.drawable.cbanana, "Banana Smoothie", "How can you say no to banana?", "\n\n1 banana\n" +
-                "\n" +
-                "1/2 orange, peeled and quartered\n" +
-                "\n" +
-                "1/3 cup Greek yogurt\n" +
-                "\n" +
-                "1/4 cup water or milk (dairy or non-dairy)\n" +
-                "\n" +
-                "1 to 2 teaspoons honey, optional\n\n"));
-
-        smoothieItems.add(new SmoothieItem(R.drawable.carrotjar, R.drawable.ccarrot, "Super Carrot", "Delicious and good for the eyes!", "\n\n1 cup chopped carrots steamed and cooled if you do not have a high-power blender or to make extra smooth for kids\n\n" +
-                "1/2 cup frozen sliced banana\n\n" +
-                "1/2 cup plain Greek yogurt\n\n" +
-                "1/2 cup unsweetened vanilla cashew milk unsweetened vanilla almond milk, or milk of your choice\n\n" +
-                "1/4 cup frozen diced pineapple\n\n" +
-                "2 tablespoons toasted walnuts\n\n" +
-                "1 tablespoon flaked coconut optional\n\n" +
-                "1/4 teaspoon cinnamon\n\n" +
-                "Pinch nutmeg\n\n" +
-                "shredded carrots, coconut, crushed walnuts for topping\n\n"));
-
-        smoothieItems.add(new SmoothieItem(R.drawable.greenjar, R.drawable.cgreen, "Green Smoothie", "Not only healthy but tasty too!", "\n\n1 ½ cups unsweetened almond milk\n\n" +
-                "2 cups spinach* frozen\n\n" +
-                "1 medium banana frozen\n\n" +
-                "1 cup fruit of choice**\n\n" +
-                "Optional add ins: protein powder bee pollen, collagen, etc.\n\n"));
-
-        smoothieItems.add(new SmoothieItem(R.drawable.limejar,R.drawable.clime, "Citrus Punch", "Lemon-Lime goodness!", "\n\n1 banana sliced and frozen\n\n" +
-                "½ cup plain Greek yogurt 130 g, or dairy-free alternative\n\n" +
-                "¼ cup key or regular lime juice 60 mL\n\n" +
-                "1 Tbsp honey 15 mL, or sweetener of choice\n\n" +
-                "½ tsp finely grated lime zest\n\n" +
-                "¼ tsp vanilla extract 1.2 mL\n\n" +
-                "Optional for texture: ice\n\n" +
-                "Optional for color: spinach\n\n" +
-                "Optional garnish: graham cracker crumbs, lime wedge\n\n"));
-
-        smoothieItems.add(new SmoothieItem(R.drawable.mangojar, R.drawable.cmango, "Tropical Mango Smoothie", "Vacation in a cup!", "\n\n2 fresh mangoes or 2 cups of frozen mango\n\n" +
-                "1 small frozen banana (or half of a large banana), you can use unfrozen if using frozen mango\n\n" +
-                "½ cup milk, dairy or dairy-free\n\n" +
-                "½ cup yogurt, dairy or dairy-free\n\n"));
-
-        smoothieItems.add(new SmoothieItem(R.drawable.jartest3, R.drawable.cpear, "Pear Smoothie", "Three pear smoothie!", "\n" +
-                "\n" +
-                "1 medium ripe banana, sliced\n" +
-                "\n" +
-                "1 medium pear, seeded and diced\n" +
-                "\n" +
-                "2/3 cup almond milk\n" +
-                "\n" +
-                "2 to 4 slices fresh peeled ginger, or to taste\n" +
-                "\n" +
-                "2 tablespoons honey\n" +
-                "\n" +
-                "1/2 teaspoon pure vanilla extract\n" +
-                "\n" +
-                "1/4 teaspoon ground cinnamon, or to taste\n" +
-                "\n" +
-                "1 1/2 cups coarsely chopped kale\n" +
-                "\n" +
-                "1 cup ice\n" +
-                "\n"));
-
-        smoothieItems.add(new SmoothieItem(R.drawable.applejar, R.drawable.cstrawberry, "Strawberry Bliss", "Can't go wrong with strawberries!", "\n\n1 cup low fat milk (or juice)\n\n" +
-                "1/2 cup strawberry Greek yogurt\n\n" +
-                "1 frozen banana cut in chunks\n\n" +
-                "1 1/2 cups fresh or frozen strawberries\n\n"));
+        smoothieItems.add(new SmoothieItem(R.drawable.ajar, R.drawable.capple, getString(R.string.appleName), getString(R.string.appleDescription), getString(R.string.appleIngredients), getString(R.string.appleServing)));
+        smoothieItems.add(new SmoothieItem(R.drawable.bjar, R.drawable.cbanana, getString(R.string.bananaName), getString(R.string.bananaDescription), getString(R.string.bananaIngredients), getString(R.string.bananaServing)));
+        smoothieItems.add(new SmoothieItem(R.drawable.cjar, R.drawable.ccarrot, getString(R.string.carrotName), getString(R.string.carrotDescription), getString(R.string.carrotIngredients), getString(R.string.carrotServing)));
+        smoothieItems.add(new SmoothieItem(R.drawable.gjar, R.drawable.cgreen, getString(R.string.greenName), getString(R.string.greenDescription), getString(R.string.greenIngredients), getString(R.string.greenServing)));
+        smoothieItems.add(new SmoothieItem(R.drawable.ljar,R.drawable.clime, getString(R.string.limeName), getString(R.string.limeDescription), getString(R.string.limeIngredients), getString(R.string.limeServing)));
+        smoothieItems.add(new SmoothieItem(R.drawable.mjar, R.drawable.cmango, getString(R.string.mangoName), getString(R.string.mangoDescription), getString(R.string.mangoIngredients), getString(R.string.mangoServing)));
+        smoothieItems.add(new SmoothieItem(R.drawable.pjar, R.drawable.cpear, getString(R.string.pearName), getString(R.string.pearDescription), getString(R.string.pearIngredients), getString(R.string.pearServing)));
+        smoothieItems.add(new SmoothieItem(R.drawable.ajar, R.drawable.cstrawberry, getString(R.string.strawberryName), getString(R.string.strawberryDescription), getString(R.string.strawberryIngredients), getString(R.string.strawberryServing)));
 
         CustomMenuAdapterVitaminC adapter = new CustomMenuAdapterVitaminC(smoothieItems);
         RecyclerView recyclerView = view.findViewById(R.id.menuRecyclerView);

@@ -64,6 +64,7 @@ public class CustomMenuAdapterVitaminA extends RecyclerView.Adapter<CustomMenuAd
             bundle.putString("NAME", currentItem.getName());
             bundle.putInt("DRAWABLE",currentItem.getDrawable2());
             bundle.putString("INGREDIENTS",currentItem.getIngredientsList());
+            bundle.putString("SERVING", currentItem.getServing());
             Navigation.findNavController(v).navigate(R.id.action_nav_vitamin_a_to_nav_detailed, bundle);
         }
     }

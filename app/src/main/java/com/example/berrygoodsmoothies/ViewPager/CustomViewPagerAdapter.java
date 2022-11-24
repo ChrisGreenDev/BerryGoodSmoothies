@@ -9,7 +9,6 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.example.berrygoodsmoothies.R;
-import com.example.berrygoodsmoothies.ViewPager.PotassiumFragment;
 
 import java.util.Calendar;
 
@@ -22,13 +21,13 @@ public class CustomViewPagerAdapter extends FragmentStateAdapter {
     @NonNull
     @Override
     public Fragment createFragment(int position) {
-        //  position = position % 5;
+          position = position % 8;
         switch (position){
             case 0 : return PotassiumFragment.newInstance("Banana Smoothie", R.drawable.bananajar);
             case 1 : return PotassiumFragment.newInstance("Apple Smoothie", R.drawable.applejar);
             case 2 : return PotassiumFragment.newInstance("Lime Smoothie", R.drawable.limejar);
             case 3 : return PotassiumFragment.newInstance("Strawberry Smoothie", R.drawable.applejar);
-            case 4 : return PotassiumFragment.newInstance("Pear Smoothie", R.drawable.jartest3);
+            case 4 : return PotassiumFragment.newInstance("Pear Smoothie", R.drawable.pearjar);
             case 5 : return PotassiumFragment.newInstance("Carrot Smoothie", R.drawable.carrotjar);
             case 6 : return PotassiumFragment.newInstance("Mango Smoothie", R.drawable.mangojar);
             case 7 : return PotassiumFragment.newInstance("Green Smoothie", R.drawable.greenjar);

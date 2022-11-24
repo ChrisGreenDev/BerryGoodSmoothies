@@ -75,7 +75,7 @@ public class SmoothieCardsFragment extends Fragment {
         smoothie.add(new Smoothie(R.drawable.capple, "The Orchard", "Tastes like fall!"));
         smoothie.add(new Smoothie(R.drawable.cmango, "Tropical Mango Smoothie", "Vacation in a cup!"));
         smoothie.add(new Smoothie(R.drawable.cgreen, "Green Smoothie", "Green and delicious!"));
-        smoothie.add(new Smoothie(R.drawable.capple, "Strawberry Bliss", "Can't go wrong with strawberries!"));
+        smoothie.add(new Smoothie(R.drawable.cstrawberry, "Strawberry Bliss", "Can't go wrong with strawberries!"));
         smoothie.add(new Smoothie(R.drawable.cbanana, "Banana Smoothie", "How could you say no to banana?"));
         smoothie.add(new Smoothie(R.drawable.clime, "Citrus Punch", "Lemon-Lime goodness!"));
         smoothie.add(new Smoothie(R.drawable.cpear, "Pear Smoothie", "Three pear smoothie!"));

@@ -64,6 +64,7 @@ public class CustomMenuAdapter extends RecyclerView.Adapter<CustomMenuAdapter.Cu
             bundle.putString("NAME", currentItem.getName());
             bundle.putInt("DRAWABLE",currentItem.getDrawable2());
             bundle.putString("INGREDIENTS",currentItem.getIngredientsList());
+            bundle.putString("SERVING", currentItem.getServing());
             Navigation.findNavController(v).navigate(R.id.action_nav_clickable_home_to_nav_detailed, bundle);
         }
     }

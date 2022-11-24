@@ -12,7 +12,6 @@ import android.widget.ListView;
 import com.example.berrygoodsmoothies.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -78,13 +77,13 @@ public class SmoothieTypeFragment extends Fragment {
         listViewImg = view.findViewById(R.id.listViewImage);
         listViewTtl = view.findViewById(R.id.listViewTitle);
         ArrayList<SmoothieType> flavors = new ArrayList<>();
-        flavors.add(new SmoothieType(R.drawable.bananajar,"Banana Smoothie"));
-        flavors.add(new SmoothieType(R.drawable.applejar,"Apple Smoothie"));
-        flavors.add(new SmoothieType(R.drawable.applejar,"Strawberry Smoothie"));
-        flavors.add(new SmoothieType(R.drawable.mangojar,"Mango Smoothie"));
-        flavors.add(new SmoothieType(R.drawable.jartest3,"Pear Smoothie"));
-        flavors.add(new SmoothieType(R.drawable.greentopscreenimage,"Green Smoothie"));
-        flavors.add(new SmoothieType(R.drawable.carrotjar,"Carrot Smoothie"));
+        flavors.add(new SmoothieType(R.drawable.bananajar,getString(R.string.bananaName)));
+        flavors.add(new SmoothieType(R.drawable.applejar,getString(R.string.appleName)));
+        flavors.add(new SmoothieType(R.drawable.applejar,getString(R.string.strawberryName)));
+        flavors.add(new SmoothieType(R.drawable.mangojar,getString(R.string.mangoName)));
+        flavors.add(new SmoothieType(R.drawable.pearjar,getString(R.string.pearName)));
+        flavors.add(new SmoothieType(R.drawable.greentopscreenimage,getString(R.string.greenName)));
+        flavors.add(new SmoothieType(R.drawable.carrotjar,getString(R.string.carrotName)));
 
 
         listView.setAdapter(new CustomListViewAdapter(getContext(), flavors));

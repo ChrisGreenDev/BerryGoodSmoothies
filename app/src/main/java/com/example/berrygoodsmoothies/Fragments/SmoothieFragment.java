@@ -3,6 +3,7 @@ package com.example.berrygoodsmoothies.Fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
@@ -12,7 +13,9 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
+import com.example.berrygoodsmoothies.Nutrients.CalciumFragment;
 import com.example.berrygoodsmoothies.R;
+import com.example.berrygoodsmoothies.ViewPager.PotassiumFragment;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -28,6 +31,7 @@ public class SmoothieFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    FragmentManager fm;
 
     public SmoothieFragment() {
         // Required empty public constructor
@@ -65,7 +69,6 @@ public class SmoothieFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_smoothie, container, false);
-
         Button potassiumButton = view.findViewById(R.id.potassiumButton);
         potassiumButton.setOnClickListener(new View.OnClickListener() {
             @Override
