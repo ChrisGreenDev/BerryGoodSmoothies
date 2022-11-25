@@ -23,14 +23,12 @@ public class CustomViewPagerAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
           position = position % 8;
         switch (position){
-            case 0 : return CreditScreenFragment.newInstance("Banana Smoothie", R.drawable.bananajar);
-            case 1 : return CreditScreenFragment.newInstance("Apple Smoothie", R.drawable.applejar);
-            case 2 : return CreditScreenFragment.newInstance("Lime Smoothie", R.drawable.limejar);
-            case 3 : return CreditScreenFragment.newInstance("Strawberry Smoothie", R.drawable.applejar);
-            case 4 : return CreditScreenFragment.newInstance("Pear Smoothie", R.drawable.pearjar);
-            case 5 : return CreditScreenFragment.newInstance("Carrot Smoothie", R.drawable.carrotjar);
-            case 6 : return CreditScreenFragment.newInstance("Mango Smoothie", R.drawable.mangojar);
-            case 7 : return CreditScreenFragment.newInstance("Green Smoothie", R.drawable.greenjar);
+            case 0 : return CreditScreenFragment.newInstance("Home Screen Image Asset Created by Chris Green using Adobe Photoshop and Adobe illustrator.", R.drawable.homeiamge);
+            case 1 : return CreditScreenFragment.newInstance("The image you see at the top of most screens is an image created by Chris Green using Adobe photoshop and Adobe Illustrator.", R.drawable.topimage);
+            case 2 : return CreditScreenFragment.newInstance("The background image was created by Chris Green using Adobe Photoshop and Adobe Illustrator", R.drawable.background);
+            case 3 : return CreditScreenFragment.newInstance("The bubble background was created and designed by Chris Green in Adobe Photoshop and Adobe Illustrator.", R.drawable.bubblebackground);
+            case 4 : return CreditScreenFragment.newInstance("Launcher icon created by Chris Green in Adobe Photoshop and Adobe Illustrator", R.mipmap.jarsicon_round);
+            case 5 : return CreditScreenFragment.newInstance("Jar icon was sourced and created by Chris Green. The original icon can be found here ", R.drawable.applejar);
             default : return CreditScreenFragment.newInstance("Looks like we dont have any smoothies that match.", R.drawable.ic_baseline_error_24);
         }
     }
@@ -41,6 +39,6 @@ public class CustomViewPagerAdapter extends FragmentStateAdapter {
         // return Integer.MAX_VALUE;
         Calendar now = new Calendar.Builder().setDate(2022,12,12).build();
         now.getTimeInMillis();
-        return 8;
+        return 6;
     }
 }

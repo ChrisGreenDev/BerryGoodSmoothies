@@ -80,4 +80,7 @@
     <string name="limeDescription">Lemon-Lime goodness!</string>
     <string name="limeIngredients">\n\n1 banana sliced and frozen\n\n • ½ cup plain Greek yogurt 130 g, or dairy-free alternative\n\n • ¼ cup key or regular lime juice 60 mL\n\n • 1 Tbsp honey 15 mL, or sweetener of choice\n\n • ½ tsp finely grated lime zest\n\n • ¼ tsp vanilla extract 1.2 mL\n\n • Optional for texture: ice\n\n • Optional for color: spinach\n\n • Optional garnish: graham cracker crumbs, lime wedge\n\n</string>
     <string name="limeServing">Serving 1 | Calories 254</string>
+
+    <!--ViewPager2 Strings -->
+    <string name="credits1">Home Screen Image Asset Created by Chris Green using Adobe Photoshop and Adobe illustrator.</string>
 </resources>
