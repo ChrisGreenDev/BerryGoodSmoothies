@@ -1,36 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ViewPager.PotassiumFragment">
+    tools:context=".ViewPager.CreditScreenFragment">
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="match_parent"
+        android:id="@+id/viewPagerImage"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:adjustViewBounds="true"
-        android:src="@drawable/topimage" />
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/viewPagerTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="32dp"
         android:layout_marginRight="25dp"
         android:fontFamily="@font/baloo"
         android:text="TextView"
         android:textAlignment="center"
-        android:textSize="@dimen/titleSize" />
+        android:textColor="@color/orangeColor"
+        android:textSize="@dimen/font_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPagerImage" />
 
-    <ImageView
-        android:id="@+id/viewPagerImage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        tools:src="@tools:sample/avatars" />
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
