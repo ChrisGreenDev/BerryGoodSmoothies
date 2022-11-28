@@ -26,6 +26,7 @@
     <string name="menuDescription">Please choose the nutrient you\'re looking for below and we will see what we can come up with!</string>
     <string name="UserInputPlaceHolderText">Please enter ingredient...</string>
     <string name="BananaCard">Banana Smoothie</string>
+    <string name="Contact">Contact</string>
     <string name="IronTitle">Iron</string>
     <string name="CalciumTitle">Calcium</string>
     <string name="PotassiumTitle">Potassium</string>
@@ -89,4 +90,9 @@
     <string name="credits5">Launcher icon created by Chris Green in Adobe Photoshop and Adobe Illustrator</string>
     <string name="credits6">Jar icon was sourced and edited by Chris Green. The original icon can be found here https://www.flaticon.com/authors/surang</string>
     <string name="credits7">Looks like we don\'t have any smoothies that match.</string>
+    <string name="Webbutton">Go To Recipe</string>
+    <string name="ContactTitle">Contact Us</string>
+    <string name="EmailBtnText">Email Us</string>
+    <string name="callBtnText">Give Us A Call</string>
+    <string name="textBtnText">Text Us</string>
 </resources>

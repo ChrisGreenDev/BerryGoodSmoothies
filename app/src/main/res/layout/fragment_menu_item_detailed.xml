@@ -90,6 +90,7 @@
                 android:text="TextView"
                 android:textAlignment="viewStart"
                 android:textSize="@dimen/fab_margin" />
+
         </LinearLayout>
     </ScrollView>
 
