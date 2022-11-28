@@ -97,4 +97,6 @@
     <string name="textBtnText">Text Us</string>
     <string name="MoreRecipesButton">More Recipes</string>
     <string name="moreRecipes">More Recipes Here</string>
+    <string name="ContactDescription">Contact us at Berry Good Smoothies if there is something you see missing or would like added to our app!</string>
+    <string name="CreditsTitle">Credits</string>
 </resources>
