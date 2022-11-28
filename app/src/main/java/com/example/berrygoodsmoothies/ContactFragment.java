@@ -1,5 +1,7 @@
 package com.example.berrygoodsmoothies;
 
+import static java.net.Proxy.Type.HTTP;
+
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -82,13 +84,20 @@ public class ContactFragment extends Fragment {
         callButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:5195144195"));
-                startActivity(i);
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:5195144195"));
+                startActivity(intent);
             }
         });
 
         //Text Intent
         Button textButton = view.findViewById(R.id.textButton);
+        textButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("sms:5195144195"));
+                startActivity(intent);
+            }
+        });
 
         return view;
     }
