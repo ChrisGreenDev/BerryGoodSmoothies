@@ -95,4 +95,6 @@
     <string name="EmailBtnText">Email Us</string>
     <string name="callBtnText">Give Us A Call</string>
     <string name="textBtnText">Text Us</string>
+    <string name="MoreRecipesButton">More Recipes</string>
+    <string name="moreRecipes">More Recipes Here</string>
 </resources>
