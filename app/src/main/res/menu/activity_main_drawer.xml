@@ -13,8 +13,17 @@
             android:icon="@drawable/ic_banana_24"
             android:title="@string/menu_smoothie" />
         <item
-            android:id="@+id/nav_credits"
+            android:id="@+id/nav_view_smoothies"
             android:icon="@drawable/ic_baseline_credits_24"
             android:title="@string/nav_creditsTitle" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="@string/Contact" />
+        <item
+            android:id="@+id/nav_social_media"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="@string/socialMediaText" />
+
     </group>
 </menu>

@@ -1,5 +1,6 @@
 package com.example.berrygoodsmoothies.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,13 +10,9 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Spinner;
 
-import com.example.berrygoodsmoothies.Nutrients.CalciumFragment;
 import com.example.berrygoodsmoothies.R;
-import com.example.berrygoodsmoothies.ViewPager.PotassiumFragment;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -108,6 +105,7 @@ public class SmoothieFragment extends Fragment {
                 Navigation.findNavController(view).navigate(R.id.action_nav_smoothie_to_calciumFragment);
             }
         });
+
         return view;
     }
 

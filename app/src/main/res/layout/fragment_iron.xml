@@ -15,6 +15,19 @@
         android:adjustViewBounds="true"
         android:src="@drawable/topimage" />
 
+    <Button
+        android:id="@+id/webButtonIron"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/baloo"
+        android:text="@string/moreRecipes"
+        android:textColor="@color/ButtonStartColor"
+        android:textStyle="bold"
+        app:cornerRadius="50dp" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/menuRecyclerView"
         android:layout_width="match_parent"
