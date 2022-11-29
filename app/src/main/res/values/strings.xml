@@ -100,4 +100,6 @@
     <string name="ContactDescription">Contact us at Berry Good Smoothies if there is something you see missing or would like added to our app!</string>
     <string name="CreditsTitle">Credits</string>
     <string name="FindSmoothiesButton">Find Smoothies Here</string>
+    <string name="callTaxiButton">Call A Taxi</string>
+    <string name="CreditsDescription">Below you will find all image assets created to use in this app.</string>
 </resources>

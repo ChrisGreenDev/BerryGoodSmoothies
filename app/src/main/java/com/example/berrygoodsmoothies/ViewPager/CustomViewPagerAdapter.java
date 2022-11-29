@@ -28,8 +28,8 @@ public class CustomViewPagerAdapter extends FragmentStateAdapter {
         switch (position){
             case 0 : return CreditScreenFragment.newInstance(context.getString(R.string.credits1), R.drawable.homeiamge);
             case 1 : return CreditScreenFragment.newInstance(context.getString(R.string.credits2), R.drawable.topimage);
-            case 2 : return CreditScreenFragment.newInstance(context.getString(R.string.credits3), R.drawable.background);
-            case 3 : return CreditScreenFragment.newInstance(context.getString(R.string.credits4), R.drawable.bubblebackground);
+            case 2 : return CreditScreenFragment.newInstance(context.getString(R.string.credits3), R.drawable.background2);
+            case 3 : return CreditScreenFragment.newInstance(context.getString(R.string.credits4), R.drawable.background);
             case 4 : return CreditScreenFragment.newInstance(context.getString(R.string.credits5), R.mipmap.jarsicon_round);
             case 5 : return CreditScreenFragment.newInstance(context.getString(R.string.credits6), R.drawable.applejar);
             default : return CreditScreenFragment.newInstance(context.getString(R.string.credits7), R.drawable.ic_baseline_error_24);

@@ -24,9 +24,9 @@
     <Button
         android:id="@+id/emailButton"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="215dp"
         android:layout_marginRight="70dp"
         android:elevation="30dp"
         android:fontFamily="@font/baloo"
@@ -41,7 +41,7 @@
     <Button
         android:id="@+id/callButton"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_marginLeft="70dp"
         android:layout_marginTop="32dp"
         android:layout_marginRight="70dp"
@@ -58,7 +58,7 @@
     <Button
         android:id="@+id/textButton"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_marginLeft="70dp"
         android:layout_marginTop="32dp"
         android:layout_marginRight="70dp"
