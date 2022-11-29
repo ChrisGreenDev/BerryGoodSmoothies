@@ -79,7 +79,7 @@ public class HomeFragment extends Fragment {
 //
 //        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
 //        String fontSize = preferences.getString("fontSize", "small_font");
-
+//
 //        switch(fontSize){
 //            case "small_font":
 //                body.setTextSize(getResources().getDimension(R.dimen.small_font));

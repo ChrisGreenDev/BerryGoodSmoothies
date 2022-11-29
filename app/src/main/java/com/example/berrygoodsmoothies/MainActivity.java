@@ -63,8 +63,8 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-//    @Override
-    public boolean onOptionItemSelected(@NonNull MenuItem item){
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item){
         switch(item.getItemId()){
             case R.id.action_settings:
                 navController.navigate(R.id.nav_settings);
