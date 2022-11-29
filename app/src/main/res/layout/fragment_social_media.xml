@@ -5,15 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background2"
-    tools:context=".ContactFragment">
+    tools:context=".SocialMediaFragment">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/baloo"
-        android:text="@string/ContactTitle"
+        android:text="@string/SupportLocal"
+        android:textAlignment="center"
         android:textColor="@color/ButtonStartColor"
         android:textSize="@dimen/titleSize"
         android:textStyle="bold"
@@ -21,27 +22,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
     <Button
-        android:id="@+id/emailButton"
+        android:id="@+id/boosterJuiceButton"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="215dp"
+        android:layout_marginTop="100dp"
         android:layout_marginRight="70dp"
-        android:layout_marginBottom="315dp"
+        android:layout_marginBottom="300dp"
         android:elevation="30dp"
         android:fontFamily="@font/baloo"
-        android:text="@string/EmailBtnText"
+        android:text="@string/BoosterJuiceTitle"
         android:textColor="@color/ButtonStartColor"
         android:textStyle="bold"
         app:cornerRadius="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.235"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
     <Button
-        android:id="@+id/callButton"
+        android:id="@+id/nutrition519Button"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:layout_marginLeft="70dp"
@@ -49,16 +61,16 @@
         android:layout_marginRight="70dp"
         android:elevation="30dp"
         android:fontFamily="@font/baloo"
-        android:text="@string/callBtnText"
+        android:text="@string/Nutrition519Title"
         android:textColor="@color/ButtonStartColor"
         android:textStyle="bold"
         app:cornerRadius="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailButton" />
+        app:layout_constraintTop_toBottomOf="@+id/boosterJuiceButton" />
 
     <Button
-        android:id="@+id/textButton"
+        android:id="@+id/freshiiButton"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:layout_marginLeft="70dp"
@@ -66,25 +78,12 @@
         android:layout_marginRight="70dp"
         android:elevation="30dp"
         android:fontFamily="@font/baloo"
-        android:text="@string/textBtnText"
+        android:text="@string/FreshiiTitle"
         android:textColor="@color/ButtonStartColor"
         android:textStyle="bold"
         app:cornerRadius="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/callButton" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/baloo"
-        android:text="@string/ContactDescription"
-        android:textAlignment="center"
-        android:textColor="@color/ButtonStartColor"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/nutrition519Button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
