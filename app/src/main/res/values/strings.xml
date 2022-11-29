@@ -26,6 +26,7 @@
     <string name="menuDescription">Please choose the nutrient you\'re looking for below and we will see what we can come up with!</string>
     <string name="UserInputPlaceHolderText">Please enter ingredient...</string>
     <string name="BananaCard">Banana Smoothie</string>
+    <string name="Contact">Contact</string>
     <string name="IronTitle">Iron</string>
     <string name="CalciumTitle">Calcium</string>
     <string name="PotassiumTitle">Potassium</string>
@@ -89,4 +90,21 @@
     <string name="credits5">Launcher icon created by Chris Green in Adobe Photoshop and Adobe Illustrator</string>
     <string name="credits6">Jar icon was sourced and edited by Chris Green. The original icon can be found here https://www.flaticon.com/authors/surang</string>
     <string name="credits7">Looks like we don\'t have any smoothies that match.</string>
+    <string name="Webbutton">Go To Recipe</string>
+    <string name="ContactTitle">Contact Us</string>
+    <string name="EmailBtnText">Email Us</string>
+    <string name="callBtnText">Give Us A Call</string>
+    <string name="textBtnText">Text Us</string>
+    <string name="MoreRecipesButton">More Recipes</string>
+    <string name="moreRecipes">More Recipes Here</string>
+    <string name="ContactDescription">Contact us at Berry Good Smoothies if there is something you see missing or would like added to our app!</string>
+    <string name="CreditsTitle">Credits</string>
+    <string name="FindSmoothiesButton">Find Smoothies Here</string>
+    <string name="callTaxiButton">Call A Taxi</string>
+    <string name="CreditsDescription">Below you will find all image assets created to use in this app.</string>
+    <string name="socialMediaText">Social Media</string>
+    <string name="SupportLocal">Support Local Smoothie Shops By Giving Them A Follow Below</string>
+    <string name="BoosterJuiceTitle">Booster Juice</string>
+    <string name="Nutrition519Title">Nutrition 519</string>
+    <string name="FreshiiTitle">Freshii</string>
 </resources>

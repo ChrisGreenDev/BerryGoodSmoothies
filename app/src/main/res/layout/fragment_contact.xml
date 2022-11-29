@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".ContactFragment">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/baloo"
+        android:text="@string/ContactTitle"
+        android:textColor="@color/ButtonStartColor"
+        android:textSize="@dimen/titleSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/emailButton"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="315dp"
+        android:elevation="30dp"
+        android:fontFamily="@font/baloo"
+        android:text="@string/EmailBtnText"
+        android:textColor="@color/ButtonStartColor"
+        android:textStyle="bold"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/callButton"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="70dp"
+        android:elevation="30dp"
+        android:fontFamily="@font/baloo"
+        android:text="@string/callBtnText"
+        android:textColor="@color/ButtonStartColor"
+        android:textStyle="bold"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailButton" />
+
+    <Button
+        android:id="@+id/textButton"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="70dp"
+        android:elevation="30dp"
+        android:fontFamily="@font/baloo"
+        android:text="@string/textBtnText"
+        android:textColor="@color/ButtonStartColor"
+        android:textStyle="bold"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/callButton" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/baloo"
+        android:text="@string/ContactDescription"
+        android:textAlignment="center"
+        android:textColor="@color/ButtonStartColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

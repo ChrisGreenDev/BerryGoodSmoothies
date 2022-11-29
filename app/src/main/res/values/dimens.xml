@@ -9,4 +9,5 @@
     <dimen name="SmoothieCardTitle">20sp</dimen>
     <dimen name="ButtonStartSize">20sp</dimen>
     <dimen name="font_size">18sp</dimen>
+    <dimen name="CreditsTitleSize">40dp</dimen>
 </resources>

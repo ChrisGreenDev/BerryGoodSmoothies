@@ -1,4 +1,4 @@
-package com.example.berrygoodsmoothies.ClickableRecyclerView;
+package com.example.berrygoodsmoothies;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -10,17 +10,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
-
-import com.example.berrygoodsmoothies.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link MenuItemDetailedFragment#newInstance} factory method to
+ * Use the {@link SocialMediaFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class MenuItemDetailedFragment extends Fragment {
+public class SocialMediaFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -31,7 +27,7 @@ public class MenuItemDetailedFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public MenuItemDetailedFragment() {
+    public SocialMediaFragment() {
         // Required empty public constructor
     }
 
@@ -41,11 +37,11 @@ public class MenuItemDetailedFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment MenuItemDetailedFragment.
+     * @return A new instance of fragment SocialMediaFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static MenuItemDetailedFragment newInstance(String param1, String param2) {
-        MenuItemDetailedFragment fragment = new MenuItemDetailedFragment();
+    public static SocialMediaFragment newInstance(String param1, String param2) {
+        SocialMediaFragment fragment = new SocialMediaFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -66,28 +62,35 @@ public class MenuItemDetailedFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_menu_item_detailed, container, false);
-        Bundle extras = getArguments();
-        if(extras != null){
-            TextView smoothieName = view.findViewById(R.id.smoothieName);
-            smoothieName.setText(extras.getString("NAME"));
-            ImageView smoothieImage = view.findViewById(R.id.smoothieImage);
-            smoothieImage.setImageResource(extras.getInt("DRAWABLE"));
-            TextView smoothieIngredients = view.findViewById(R.id.smoothieIngredients);
-            smoothieIngredients.setText(extras.getString("INGREDIENTS"));
-            TextView smoothieServing = view.findViewById(R.id.smoothieServing);
-            smoothieServing.setText(extras.getString("SERVING"));
-        }
+        View view = inflater.inflate(R.layout.fragment_social_media, container, false);
 
-        Button recipeButtonWeb = view.findViewById(R.id.smoothieLocationButton);
-        recipeButtonWeb.setOnClickListener(new View.OnClickListener() {
+        Button boosterJuiceBtn = view.findViewById(R.id.boosterJuiceButton);
+        boosterJuiceBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               Uri location = Uri.parse("geo:42.31799457080979, -83.03851879593401?&q=Booster+Juice ");
-               Intent intent = new Intent(Intent.ACTION_VIEW, location);
-               startActivity(intent);
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/boosterjuice/?hl=en"));
+                startActivity(intent);
             }
         });
+
+        Button nutrition519Btn = view.findViewById(R.id.nutrition519Button);
+        nutrition519Btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/nutrition519_/?hl=en"));
+                startActivity(intent);
+            }
+        });
+
+        Button freshiiBtn = view.findViewById(R.id.freshiiButton);
+        freshiiBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/freshii/?hl=en"));
+                startActivity(intent);
+            }
+        });
+
         return view;
     }
 }

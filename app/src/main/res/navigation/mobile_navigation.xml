@@ -133,4 +133,14 @@
             app:popEnterAnim="@anim/slide_in"
             app:popExitAnim="@anim/slide_out" />
     </fragment>
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.berrygoodsmoothies.ContactFragment"
+        android:label="Contact"
+        tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/nav_social_media"
+        android:name="com.example.berrygoodsmoothies.SocialMediaFragment"
+        android:label="fragment_social_media"
+        tools:layout="@layout/fragment_social_media" />
 </navigation>

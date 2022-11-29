@@ -1,4 +1,6 @@
-package com.example.berrygoodsmoothies.ClickableRecyclerView;
+package com.example.berrygoodsmoothies;
+
+import static java.net.Proxy.Type.HTTP;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -10,17 +12,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
-
-import com.example.berrygoodsmoothies.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link MenuItemDetailedFragment#newInstance} factory method to
+ * Use the {@link ContactFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class MenuItemDetailedFragment extends Fragment {
+public class ContactFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -31,7 +29,7 @@ public class MenuItemDetailedFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public MenuItemDetailedFragment() {
+    public ContactFragment() {
         // Required empty public constructor
     }
 
@@ -41,11 +39,11 @@ public class MenuItemDetailedFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment MenuItemDetailedFragment.
+     * @return A new instance of fragment ContactFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static MenuItemDetailedFragment newInstance(String param1, String param2) {
-        MenuItemDetailedFragment fragment = new MenuItemDetailedFragment();
+    public static ContactFragment newInstance(String param1, String param2) {
+        ContactFragment fragment = new ContactFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -66,28 +64,41 @@ public class MenuItemDetailedFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_menu_item_detailed, container, false);
-        Bundle extras = getArguments();
-        if(extras != null){
-            TextView smoothieName = view.findViewById(R.id.smoothieName);
-            smoothieName.setText(extras.getString("NAME"));
-            ImageView smoothieImage = view.findViewById(R.id.smoothieImage);
-            smoothieImage.setImageResource(extras.getInt("DRAWABLE"));
-            TextView smoothieIngredients = view.findViewById(R.id.smoothieIngredients);
-            smoothieIngredients.setText(extras.getString("INGREDIENTS"));
-            TextView smoothieServing = view.findViewById(R.id.smoothieServing);
-            smoothieServing.setText(extras.getString("SERVING"));
-        }
+        View view = inflater.inflate(R.layout.fragment_contact, container, false);
 
-        Button recipeButtonWeb = view.findViewById(R.id.smoothieLocationButton);
-        recipeButtonWeb.setOnClickListener(new View.OnClickListener() {
+        //Email Intent
+        Button emailButton = view.findViewById(R.id.emailButton);
+        emailButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               Uri location = Uri.parse("geo:42.31799457080979, -83.03851879593401?&q=Booster+Juice ");
-               Intent intent = new Intent(Intent.ACTION_VIEW, location);
-               startActivity(intent);
+                String[] emailAddresses = {"w0795059@myscc.ca"};
+                Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:"));
+                intent.putExtra(Intent.EXTRA_EMAIL, emailAddresses);
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Questions about...");
+                startActivity(intent);
             }
         });
+
+        //Phone Intent
+        Button callButton = view.findViewById(R.id.callButton);
+        callButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:5195144195"));
+                startActivity(intent);
+            }
+        });
+
+        //Text Intent
+        Button textButton = view.findViewById(R.id.textButton);
+        textButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("sms:5195144195"));
+                startActivity(intent);
+            }
+        });
+
         return view;
     }
 }

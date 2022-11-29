@@ -90,6 +90,17 @@
                 android:text="TextView"
                 android:textAlignment="viewStart"
                 android:textSize="@dimen/fab_margin" />
+
+            <Button
+                android:id="@+id/smoothieLocationButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:text="@string/FindSmoothiesButton"
+                android:textColor="@color/ButtonStartColor"
+                android:textStyle="bold"
+                app:cornerRadius="50dp" />
+
         </LinearLayout>
     </ScrollView>
 
