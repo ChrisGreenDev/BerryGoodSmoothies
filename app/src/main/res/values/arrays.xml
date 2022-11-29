@@ -9,4 +9,14 @@
         <item>reply</item>
         <item>reply_all</item>
     </string-array>
+
+    <string-array name="font_size_menu">
+        <item>Small</item>
+        <item>Medium</item>
+    </string-array>
+
+    <string-array name="font_size_values">
+        <item>small_font</item>
+        <item>medium_font</item>
+    </string-array>
 </resources>

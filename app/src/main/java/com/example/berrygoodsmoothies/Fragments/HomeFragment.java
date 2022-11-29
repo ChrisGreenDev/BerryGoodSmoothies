@@ -1,5 +1,6 @@
 package com.example.berrygoodsmoothies.Fragments;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.preference.PreferenceManager;
+import android.widget.TextView;
 
 import com.example.berrygoodsmoothies.R;
 
@@ -64,6 +67,7 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+        TextView body = view.findViewById(R.id.homeScreenDescription);
 
         Button startButton = view.findViewById(R.id.startButton);
         startButton.setOnClickListener(new View.OnClickListener() {
@@ -72,6 +76,17 @@ public class HomeFragment extends Fragment {
                 Navigation.findNavController(view).navigate(R.id.action_nav_home_to_nav_smoothie);
             }
         });
+//
+//        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+//        String fontSize = preferences.getString("fontSize", "small_font");
+
+//        switch(fontSize){
+//            case "small_font":
+//                body.setTextSize(getResources().getDimension(R.dimen.small_font));
+//                break;
+//            case "medium_font":
+//                body.setTextSize(getResources().getDimension(R.dimen.medium_font));
+//        }
 
         return view;
     }

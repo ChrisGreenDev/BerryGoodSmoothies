@@ -11,4 +11,6 @@
     <dimen name="font_size">18sp</dimen>
     <dimen name="CreditsTitleSize">40dp</dimen>
     <dimen name="HeaderTitle">20sp</dimen>
+    <dimen name="small_font">14sp</dimen>
+    <dimen name="medium_font">18sp</dimen>
 </resources>
