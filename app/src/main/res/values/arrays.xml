@@ -19,4 +19,14 @@
         <item>small_font</item>
         <item>medium_font</item>
     </string-array>
+
+    <string-array name="font_menu">
+        <item>Baloo</item>
+        <item>Ubuntu</item>
+    </string-array>
+
+    <string-array name="font_values">
+        <item>baloo_font</item>
+        <item>ubuntu_font</item>
+    </string-array>
 </resources>

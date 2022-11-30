@@ -70,6 +70,7 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         TextView body = view.findViewById(R.id.homeScreenDescription);
+        TextView title = view.findViewById(R.id.homeTitle);
 
         Button startButton = view.findViewById(R.id.startButton);
         startButton.setOnClickListener(new View.OnClickListener() {
@@ -81,6 +82,23 @@ public class HomeFragment extends Fragment {
 
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
         String fontSize = preferences.getString("fontSize", "small_font");
+        String font = preferences.getString("fontType", "baloo_font");
+
+        Typeface balooFont = ResourcesCompat.getFont(getContext(), R.font.baloo);
+        Typeface ubuntuFont = ResourcesCompat.getFont(getContext(), R.font.ubuntu);
+
+        switch(font) {
+            case "baloo_font":
+                title.setTypeface(balooFont);
+                body.setTypeface(balooFont);
+                startButton.setTypeface(balooFont);
+                break;
+            case "ubuntu_font":
+                title.setTypeface(ubuntuFont);
+                body.setTypeface(ubuntuFont);
+                startButton.setTypeface(ubuntuFont);
+                break;
+        }
 
         switch(fontSize){
             case "small_font":

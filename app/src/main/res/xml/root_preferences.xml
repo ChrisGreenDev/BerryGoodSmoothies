@@ -7,4 +7,11 @@
         app:entries="@array/font_size_menu"
         app:entryValues="@array/font_size_values"/>
 
+    <ListPreference app:title="Font Type"
+        app:summary="Please Choose A Font"
+        app:key="fontType"
+        app:defaultValue="baloo_font"
+        app:entries="@array/font_menu"
+        app:entryValues="@array/font_values"/>
+
 </PreferenceScreen>
