@@ -1,6 +1,7 @@
 package com.example.berrygoodsmoothies.Nutrients;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -92,6 +93,7 @@ public class CalciumFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
 
         return view;
     }

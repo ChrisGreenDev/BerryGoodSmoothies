@@ -1,8 +1,10 @@
 package com.example.berrygoodsmoothies.Fragments;
 
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 
+import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
@@ -76,17 +78,17 @@ public class HomeFragment extends Fragment {
                 Navigation.findNavController(view).navigate(R.id.action_nav_home_to_nav_smoothie);
             }
         });
-//
-//        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
-//        String fontSize = preferences.getString("fontSize", "small_font");
-//
-//        switch(fontSize){
-//            case "small_font":
-//                body.setTextSize(getResources().getDimension(R.dimen.small_font));
-//                break;
-//            case "medium_font":
-//                body.setTextSize(getResources().getDimension(R.dimen.medium_font));
-//        }
+
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        String fontSize = preferences.getString("fontSize", "small_font");
+
+        switch(fontSize){
+            case "small_font":
+                body.setTextSize(getResources().getDimension(R.dimen.small_font));
+                break;
+            case "medium_font":
+                body.setTextSize(getResources().getDimension(R.dimen.medium_font));
+        }
 
         return view;
     }

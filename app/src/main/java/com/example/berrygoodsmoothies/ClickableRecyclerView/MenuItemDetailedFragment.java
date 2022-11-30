@@ -1,11 +1,13 @@
 package com.example.berrygoodsmoothies.ClickableRecyclerView;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -88,6 +90,18 @@ public class MenuItemDetailedFragment extends Fragment {
                startActivity(intent);
             }
         });
+
+        TextView body = view.findViewById(R.id.smoothieIngredients);
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        String fontSize = preferences.getString("fontSize", "small_font");
+
+        switch(fontSize){
+            case "small_font":
+                body.setTextSize(getResources().getDimension(R.dimen.small_font));
+                break;
+            case "medium_font":
+                body.setTextSize(getResources().getDimension(R.dimen.medium_font));
+        }
         return view;
     }
 }
