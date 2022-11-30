@@ -82,8 +82,9 @@ public class HomeFragment extends Fragment {
 
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
         String fontSize = preferences.getString("fontSize", "small_font");
-        String font = preferences.getString("fontType", "baloo_font");
 
+        //Font setting
+        String font = preferences.getString("fontType", "baloo_font");
         Typeface balooFont = ResourcesCompat.getFont(getContext(), R.font.baloo);
         Typeface ubuntuFont = ResourcesCompat.getFont(getContext(), R.font.ubuntu);
 
