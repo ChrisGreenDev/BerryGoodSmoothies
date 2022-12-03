@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background2"
-    tools:context=".SocialMediaFragment">
+    tools:context=".Fragments.SocialMediaFragment">
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/socialTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -30,7 +30,7 @@
         android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/socialTitle" />
 
     <Button
         android:id="@+id/boosterJuiceButton"
