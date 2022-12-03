@@ -69,8 +69,6 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-        TextView body = view.findViewById(R.id.homeScreenDescription);
-        TextView title = view.findViewById(R.id.homeTitle);
 
         Button startButton = view.findViewById(R.id.startButton);
         startButton.setOnClickListener(new View.OnClickListener() {
@@ -80,6 +78,9 @@ public class HomeFragment extends Fragment {
             }
         });
 
+
+        TextView body = view.findViewById(R.id.homeScreenDescription);
+        TextView title = view.findViewById(R.id.homeTitle);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
         String fontSize = preferences.getString("fontSize", "small_font");
 
@@ -101,6 +102,7 @@ public class HomeFragment extends Fragment {
                 break;
         }
 
+        //Font size setting
         switch(fontSize){
             case "small_font":
                 body.setTextSize(getResources().getDimension(R.dimen.small_font));

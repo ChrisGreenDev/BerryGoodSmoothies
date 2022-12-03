@@ -1,15 +1,20 @@
 package com.example.berrygoodsmoothies.Fragments;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
 
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.berrygoodsmoothies.R;
 
@@ -92,6 +97,29 @@ public class SocialMediaFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        TextView title = view.findViewById(R.id.socialTitle);
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+
+        //Font setting
+        String font = preferences.getString("fontType", "baloo_font");
+        Typeface balooFont = ResourcesCompat.getFont(getContext(), R.font.baloo);
+        Typeface ubuntuFont = ResourcesCompat.getFont(getContext(), R.font.ubuntu);
+
+        switch(font) {
+            case "baloo_font":
+                title.setTypeface(balooFont);
+                boosterJuiceBtn.setTypeface(balooFont);
+                nutrition519Btn.setTypeface(balooFont);
+                freshiiBtn.setTypeface(balooFont);
+                break;
+            case "ubuntu_font":
+                title.setTypeface(ubuntuFont);
+                boosterJuiceBtn.setTypeface(ubuntuFont);
+                nutrition519Btn.setTypeface(ubuntuFont);
+                freshiiBtn.setTypeface(ubuntuFont);
+                break;
+        }
 
         return view;
     }
