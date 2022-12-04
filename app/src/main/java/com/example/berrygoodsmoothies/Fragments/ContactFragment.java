@@ -113,9 +113,6 @@ public class ContactFragment extends Fragment {
 
         TextView title = view.findViewById(R.id.contactTitle);
         TextView description = view.findViewById(R.id.contactDescription);
-//        Button emailBtn = view.findViewById(R.id.emailButton);
-//        Button callBtn = view.findViewById(R.id.callButton);
-//        Button textBtn = view.findViewById(R.id.textButton);
 
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
         String fontSize = preferences.getString("fontSize", "small_font");
