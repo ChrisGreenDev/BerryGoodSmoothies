@@ -3,7 +3,7 @@
 Welcome! Berry Good Smoothies is an application for people looking to start eating healthier. This app allows you to input nutrients you're looking to add into your everyday diet and recommend a smoothie that has the nutrients required! Simply input a single value and the app will not only show you the smoothie best fitting but it will also show how to make it with a list of ingredients. 
 
 ### Home Screen
-![The home screen for my application](readmeimages/home_screen.png)
+![The home screen for my application](readmeimages/home_screenn.png)
 This is the start screen to the application. It gives a brief description of what this app is intended for. At the bottom you will see a start button to get started.
 
 ### Smoothie Menu Screen
@@ -45,3 +45,7 @@ THe credits screen has all images assets used in this application. All but one w
 ### Settings Screen
 ![Settings screen](readmeimages/settings_screen.png)
 The settings menu offers two different settings. The first, allowing the user to change text size from small to medium. The second choice is font. This setting gives the user the ability to change the typeface of the application from Baloo to Ubuntu.
+
+### Author
+Chris Green
+w0795059@myscc.ca
