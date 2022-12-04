@@ -104,11 +104,18 @@ public class ContactFragment extends Fragment {
             }
         });
 
+        /**
+         * Settings section for text size and font type
+         * Text size uses a string to get the size value
+         * Font type uses Typeface to set the font throughout the application
+         * The font type is set to the title, description and all buttons on this page
+         */
+
         TextView title = view.findViewById(R.id.contactTitle);
         TextView description = view.findViewById(R.id.contactDescription);
-        Button emailBtn = view.findViewById(R.id.emailButton);
-        Button callBtn = view.findViewById(R.id.callButton);
-        Button textBtn = view.findViewById(R.id.textButton);
+//        Button emailBtn = view.findViewById(R.id.emailButton);
+//        Button callBtn = view.findViewById(R.id.callButton);
+//        Button textBtn = view.findViewById(R.id.textButton);
 
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
         String fontSize = preferences.getString("fontSize", "small_font");
@@ -122,16 +129,16 @@ public class ContactFragment extends Fragment {
             case "baloo_font":
                 title.setTypeface(balooFont);
                 description.setTypeface(balooFont);
-                emailBtn.setTypeface(balooFont);
-                callBtn.setTypeface(balooFont);
-                textBtn.setTypeface(balooFont);
+                emailButton.setTypeface(balooFont);
+                callButton.setTypeface(balooFont);
+                textButton.setTypeface(balooFont);
                 break;
             case "ubuntu_font":
                 title.setTypeface(ubuntuFont);
                 description.setTypeface(ubuntuFont);
-                emailBtn.setTypeface(ubuntuFont);
-                callBtn.setTypeface(ubuntuFont);
-                textBtn.setTypeface(ubuntuFont);
+                emailButton.setTypeface(ubuntuFont);
+                callButton.setTypeface(ubuntuFont);
+                textButton.setTypeface(ubuntuFont);
                 break;
         }
 

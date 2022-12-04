@@ -78,6 +78,12 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        /**
+         * Settings section for text size and font type
+         * Text size uses a string to get the size value
+         * Font type uses Typeface to set the font throughout the application
+         * The font type is set to the title and description on this page
+         */
 
         TextView body = view.findViewById(R.id.homeScreenDescription);
         TextView title = view.findViewById(R.id.homeTitle);

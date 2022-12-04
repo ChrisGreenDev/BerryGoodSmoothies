@@ -6,3 +6,5 @@ Welcome! Berry Good Smoothies is an application for people looking to start eati
 # Settings
 
 In the settings menu you are able to pick between different types of smoothies. If you only want to filter by smoothies made with fruit, you can do so. You will also be able to change the measurement system from imperial to metric. You are also able to change the serving size that will adjust the ingredients based on the serving size chosen.
+
+
