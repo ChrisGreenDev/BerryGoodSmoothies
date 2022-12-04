@@ -10,4 +10,115 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_smoothie">Smoothies</string>
+    <string name="menu_settings">Settings</string>
+    <string name="BGSCardTitle">Berry Good Smoothies</string>
+    <string name="Email">w0795059@myscc.ca</string>
+    <string name="nav_creditsTitle">Credits</string>
+    <string name="homeTitleText">Berry Good Smoothies</string>
+    <string name="recyclerViewTitle">Our Smoothies</string>
+    <string name="recyclerViewDescription">Take a look at our list of smoothies below!</string>
+    <string name="HomeScreenDescription">Need help eating healthy and getting all the nutrients you\'re looking for? With Berry Good Smoothies you not only get a great tasting smoothie but a nutritious one! All you have to do is let us know which nutrient you\'re looking for and we will do the rest. To get started, please click the start button below.</string>
+    <string name="StartButton">START</string>
+    <string name="MenuIngredientTitle">Ingredients</string>
+    <string name="menuDescription">Please choose the nutrient you\'re looking for below and we will see what we can come up with!</string>
+    <string name="UserInputPlaceHolderText">Please enter ingredient...</string>
+    <string name="BananaCard">Banana Smoothie</string>
+    <string name="Contact">Contact</string>
+    <string name="IronTitle">Iron</string>
+    <string name="CalciumTitle">Calcium</string>
+    <string name="PotassiumTitle">Potassium</string>
+    <string name="VitaminATitle">Vitamin A</string>
+    <string name="VitaminCTitle">Vitamin C</string>
+    <string name="IngredientTitle">Ingredients</string>
+
+    <!--Apple Strings -->
+    <string name="appleName">Orchard Smoothie</string>
+    <string name="appleDescription">Tastes like fall!</string>
+    <string name="appleIngredients">\n\n• 1 frozen banana cut in chunks\n\n • 1 medium sweet apple washed with peel on\n\n • ¼ cup unsweetened almond milk\n\n • ¼ cup rolled oats\n\n • ½ cup chopped frozen banana about ½ of a large banana or 8, ¾-inch slices\n\n • 1 tablespoon peanut butter or almond butter\n\n • ½ tablespoon pure maple syrup plus additional to taste\n\n • 1 teaspoon pure vanilla extract\n\n • ¼ teaspoon ground cinnamon plus additional for serving\n\n • Pinch ground nutmeg\n\n • Pinch ground allspice\n\n • Small handful ice\n\n</string>
+    <string name="appleServing">Serving 1 | Calories 305</string>
+
+    <!--Banana Strings -->
+    <string name="bananaName">Banana Smoothie</string>
+    <string name="bananaDescription">How can you say no to banana?</string>
+    <string name="bananaIngredients">\n\n• 1 banana\n\n • ½ orange, peeled and quartered\n\n • ⅓ cup Greek yogurt\n\n • ¼ cup water or milk (dairy or non-dairy)\n\n • 1 to 2 teaspoons honey, optional\n\n</string>
+    <string name="bananaServing">Serving 1 | Calories 122</string>
+
+    <!--Carrot Strings -->
+    <string name="carrotName">Super Carrot</string>
+    <string name="carrotDescription">Delicious and good for the eyes!</string>
+    <string name="carrotIngredients">\n\n• 1 cup chopped carrots steamed and cooled if you do not have a high-power blender or to make extra smooth for kids\n\n• ½ cup frozen sliced banana\n\n • ½ cup plain Greek yogurt\n\n • ½ cup unsweetened vanilla cashew milk unsweetened vanilla almond milk, or milk of your choice\n\n • ¼ cup frozen diced pineapple\n\n • 2 tablespoons toasted walnuts\n\n • 1 tablespoon flaked coconut optional\n\n • ¼ teaspoon cinnamon\n\n • Pinch nutmeg\n\n • shredded carrots, coconut, crushed walnuts for topping\n\n</string>
+    <string name="carrotServing">Serving 1 | Calories 343</string>
+
+    <!--Green Strings -->
+    <string name="greenName">Green Smoothie</string>
+    <string name="greenDescription">Not only healthy but tasty too!</string>
+    <string name="greenIngredients">\n\n• 1 ½ cups unsweetened almond milk\n\n • 2 cups spinach* frozen\n\n • 1 medium banana frozen\n\n • 1 cup fruit of choice**\n\n • Optional add ins: protein powder bee pollen, collagen, etc.\n\n</string>
+    <string name="greenServing">Serving 2 | Calories 202</string>
+
+    <!--Mango Strings -->
+    <string name="mangoName">Tropical Mango Smoothie</string>
+    <string name="mangoDescription">Vacation in a cup!</string>
+    <string name="mangoIngredients">\n\n• 2 fresh mangoes or 2 cups of frozen mango\n\n • 1 small frozen banana (or half of a large banana), you can use unfrozen if using frozen mango\n\n • ½ cup milk, dairy or dairy-free\n\n • ½ cup yogurt, dairy or dairy-free\n\n</string>
+    <string name="mangoServing">Serving 2 | Calories 215</string>
+
+    <!--Pear Strings -->
+    <string name="pearName">Pear Smoothie</string>
+    <string name="pearDescription">Three pear smoothie!</string>
+    <string name="pearIngredients">\n\n• 1 medium ripe banana, sliced\n\n • 1 medium pear, seeded and diced\n\n • 2/3 cup almond milk\n\n • 2 to 4 slices fresh peeled ginger, or to taste\n\n • 2 tablespoons honey\n\n • ½ teaspoon pure vanilla extract\n\n • ¼ teaspoon ground cinnamon, or to taste\n\n • 1 ½ cups coarsely chopped kale\n\n • 1 cup ice\n\n</string>
+    <string name="pearServing">Serving 2 | Calories 296</string>
+
+    <!--Strawberry Strings -->
+    <string name="strawberryName">Strawberry Bliss</string>
+    <string name="strawberryDescription">Can\'t go wrong with strawberries!</string>
+    <string name="strawberryIngredients">\n\n• 1 cup low fat milk (or juice)\n\n • ½ cup strawberry Greek yogurt\n\n • 1 frozen banana cut in chunks\n\n • 1 ½ cups fresh or frozen strawberries\n\n</string>
+    <string name="strawberryServing">Serving 2 | Calories 199</string>
+
+    <!--Lime Strings -->
+    <string name="limeName">Citrus Punch</string>
+    <string name="limeDescription">Lemon-Lime goodness!</string>
+    <string name="limeIngredients">\n\n1 banana sliced and frozen\n\n • ½ cup plain Greek yogurt 130 g, or dairy-free alternative\n\n • ¼ cup key or regular lime juice 60 mL\n\n • 1 Tbsp honey 15 mL, or sweetener of choice\n\n • ½ tsp finely grated lime zest\n\n • ¼ tsp vanilla extract 1.2 mL\n\n • Optional for texture: ice\n\n • Optional for color: spinach\n\n • Optional garnish: graham cracker crumbs, lime wedge\n\n</string>
+    <string name="limeServing">Serving 1 | Calories 254</string>
+
+    <!--ViewPager2 Strings -->
+    <string name="credits1">Home Screen Image Asset Created by Chris Green using Adobe Photoshop and Adobe illustrator.</string>
+    <string name="credits2">The image you see at the top of most screens is an image created by Chris Green using Adobe photoshop and Adobe Illustrator.</string>
+    <string name="credits3">The background image was created by Chris Green using Adobe Photoshop and Adobe Illustrator.</string>
+    <string name="credits4">The bubble background was created and designed by Chris Green in Adobe Photoshop and Adobe Illustrator.</string>
+    <string name="credits5">Launcher icon created by Chris Green in Adobe Photoshop and Adobe Illustrator</string>
+    <string name="credits6">Jar icon was sourced and edited by Chris Green. The original icon can be found here https://www.flaticon.com/authors/surang</string>
+    <string name="credits7">Looks like we don\'t have any smoothies that match.</string>
+    <string name="Webbutton">Go To Recipe</string>
+    <string name="ContactTitle">Contact Us</string>
+    <string name="EmailBtnText">Email Us</string>
+    <string name="callBtnText">Give Us A Call</string>
+    <string name="textBtnText">Text Us</string>
+    <string name="MoreRecipesButton">More Recipes</string>
+    <string name="moreRecipes">More Recipes Here</string>
+    <string name="ContactDescription">Contact us at Berry Good Smoothies if there is something you see missing or would like added to our app!</string>
+    <string name="CreditsTitle">Credits</string>
+    <string name="FindSmoothiesButton">Find Smoothies Here</string>
+    <string name="callTaxiButton">Call A Taxi</string>
+    <string name="CreditsDescription">Below you will find all image assets created to use in this app.</string>
+    <string name="socialMediaText">Social Media</string>
+    <string name="SupportLocal">Support Local Smoothie Shops By Giving Them A Follow Below</string>
+    <string name="BoosterJuiceTitle">Booster Juice</string>
+    <string name="Nutrition519Title">Nutrition 519</string>
+    <string name="FreshiiTitle">Freshii</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 </resources>

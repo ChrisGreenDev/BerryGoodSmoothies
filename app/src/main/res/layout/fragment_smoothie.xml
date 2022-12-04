@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.SmoothieFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/topimage" />
+
+    <TextView
+        android:id="@+id/menuTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/baloo"
+        android:text="@string/MenuIngredientTitle"
+        android:textAlignment="center"
+        android:textColor="@color/recyclerViewTitleColor"
+        android:textSize="@dimen/titleSize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/menuDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/baloo"
+        android:lineSpacingExtra="10sp"
+        android:text="@string/menuDescription"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/potassiumButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="80dp"
+        android:layout_weight="2"
+        android:fontFamily="@font/baloo"
+        android:text="potassium"
+        android:textColor="@color/ButtonStartColor"
+        android:textStyle="bold"
+        app:cornerRadius="50dp" />
+
+    <Button
+        android:id="@+id/vitaminCButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="80dp"
+        android:layout_weight="2"
+        android:fontFamily="@font/baloo"
+        android:text="Vitamin C"
+        android:textColor="@color/ButtonStartColor"
+        android:textStyle="bold"
+        app:cornerRadius="50dp" />
+
+    <Button
+        android:id="@+id/calciumButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="80dp"
+        android:layout_weight="2"
+        android:fontFamily="@font/baloo"
+        android:text="Calcium"
+        android:textColor="@color/ButtonStartColor"
+        android:textStyle="bold"
+        app:cornerRadius="50dp" />
+
+    <Button
+        android:id="@+id/vitaminAButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="80dp"
+        android:layout_weight="2"
+        android:fontFamily="@font/baloo"
+        android:text="Vitamin A"
+        android:textColor="@color/ButtonStartColor"
+        android:textStyle="bold"
+        app:cornerRadius="50dp" />
+
+    <Button
+        android:id="@+id/ironButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="2"
+        android:fontFamily="@font/baloo"
+        android:text="Iron"
+        android:textColor="@color/ButtonStartColor"
+        android:textStyle="bold"
+        app:cornerRadius="50dp" />
+
+
+</LinearLayout>

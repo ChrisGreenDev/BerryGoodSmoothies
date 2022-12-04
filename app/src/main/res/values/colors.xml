@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="pcG">#b5e61d</color>
+    <color name="pcY">#ffc90c</color>
+    <color name="recyclerViewTitleColor">#FF5722</color>
+    <color name="ButtonStartColor">#FFFFFF</color>
+    <color name="titleColor">#000000</color>
+    <color name="orangeColor">#FFFF5722</color>
+    <color name="HeaderColor">#58B19F</color>
 </resources>
