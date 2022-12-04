@@ -10,4 +10,7 @@
     <dimen name="ButtonStartSize">20sp</dimen>
     <dimen name="font_size">18sp</dimen>
     <dimen name="CreditsTitleSize">40dp</dimen>
+    <dimen name="HeaderTitle">20sp</dimen>
+    <dimen name="small_font">4sp</dimen>
+    <dimen name="medium_font">7sp</dimen>
 </resources>

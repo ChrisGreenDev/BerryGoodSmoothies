@@ -1,7 +1,10 @@
 package com.example.berrygoodsmoothies.Fragments;
 
+import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 
+import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
@@ -9,6 +12,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.preference.PreferenceManager;
+import android.widget.TextView;
 
 import com.example.berrygoodsmoothies.R;
 
@@ -72,6 +77,45 @@ public class HomeFragment extends Fragment {
                 Navigation.findNavController(view).navigate(R.id.action_nav_home_to_nav_smoothie);
             }
         });
+
+        /**
+         * Settings section for text size and font type
+         * Text size uses a string to get the size value
+         * Font type uses Typeface to set the font throughout the application
+         * The font type is set to the title and description on this page
+         */
+
+        TextView body = view.findViewById(R.id.homeScreenDescription);
+        TextView title = view.findViewById(R.id.homeTitle);
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        String fontSize = preferences.getString("fontSize", "small_font");
+
+        //Font setting
+        String font = preferences.getString("fontType", "baloo_font");
+        Typeface balooFont = ResourcesCompat.getFont(getContext(), R.font.baloo);
+        Typeface ubuntuFont = ResourcesCompat.getFont(getContext(), R.font.ubuntu);
+
+        switch(font) {
+            case "baloo_font":
+                title.setTypeface(balooFont);
+                body.setTypeface(balooFont);
+                startButton.setTypeface(balooFont);
+                break;
+            case "ubuntu_font":
+                title.setTypeface(ubuntuFont);
+                body.setTypeface(ubuntuFont);
+                startButton.setTypeface(ubuntuFont);
+                break;
+        }
+
+        //Font size setting
+        switch(fontSize){
+            case "small_font":
+                body.setTextSize(getResources().getDimension(R.dimen.small_font));
+                break;
+            case "medium_font":
+                body.setTextSize(getResources().getDimension(R.dimen.medium_font));
+        }
 
         return view;
     }

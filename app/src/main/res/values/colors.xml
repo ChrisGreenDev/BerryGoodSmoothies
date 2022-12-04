@@ -13,4 +13,5 @@
     <color name="ButtonStartColor">#FFFFFF</color>
     <color name="titleColor">#000000</color>
     <color name="orangeColor">#FFFF5722</color>
+    <color name="HeaderColor">#58B19F</color>
 </resources>

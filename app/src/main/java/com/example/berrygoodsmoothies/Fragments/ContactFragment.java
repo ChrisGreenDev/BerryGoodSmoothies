@@ -1,17 +1,22 @@
-package com.example.berrygoodsmoothies;
-
-import static java.net.Proxy.Type.HTTP;
+package com.example.berrygoodsmoothies.Fragments;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
 
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
+
+import com.example.berrygoodsmoothies.R;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -98,6 +103,54 @@ public class ContactFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        /**
+         * Settings section for text size and font type
+         * Text size uses a string to get the size value
+         * Font type uses Typeface to set the font throughout the application
+         * The font type is set to the title, description and all buttons on this page
+         */
+
+        TextView title = view.findViewById(R.id.contactTitle);
+        TextView description = view.findViewById(R.id.contactDescription);
+//        Button emailBtn = view.findViewById(R.id.emailButton);
+//        Button callBtn = view.findViewById(R.id.callButton);
+//        Button textBtn = view.findViewById(R.id.textButton);
+
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        String fontSize = preferences.getString("fontSize", "small_font");
+
+        //Font setting
+        String font = preferences.getString("fontType", "baloo_font");
+        Typeface balooFont = ResourcesCompat.getFont(getContext(), R.font.baloo);
+        Typeface ubuntuFont = ResourcesCompat.getFont(getContext(), R.font.ubuntu);
+
+        switch(font) {
+            case "baloo_font":
+                title.setTypeface(balooFont);
+                description.setTypeface(balooFont);
+                emailButton.setTypeface(balooFont);
+                callButton.setTypeface(balooFont);
+                textButton.setTypeface(balooFont);
+                break;
+            case "ubuntu_font":
+                title.setTypeface(ubuntuFont);
+                description.setTypeface(ubuntuFont);
+                emailButton.setTypeface(ubuntuFont);
+                callButton.setTypeface(ubuntuFont);
+                textButton.setTypeface(ubuntuFont);
+                break;
+        }
+
+        //Font size setting
+        switch(fontSize){
+            case "small_font":
+                description.setTextSize(getResources().getDimension(R.dimen.small_font));
+                break;
+            case "medium_font":
+                description.setTextSize(getResources().getDimension(R.dimen.medium_font));
+        }
+
 
         return view;
     }
