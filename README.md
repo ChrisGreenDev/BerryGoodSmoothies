@@ -3,7 +3,7 @@
 Welcome! Berry Good Smoothies is an application for people looking to start eating healthier. This app allows you to input nutrients you're looking to add into your everyday diet and recommend a smoothie that has the nutrients required! Simply input a single value and the app will not only show you the smoothie best fitting but it will also show how to make it with a list of ingredients. 
 
 ### Video of Berry Good Smoothies
-![Short navigation through the application](https://giphy.com/gifs/UxLJpYElAFzhYB5TcJ/fullscreen)
+![Short navigation through the application](readmeimages/bgsvideo.mp4)
 
 ### Home Screen
 ![The home screen for my application](readmeimages/home_screenn.png)
