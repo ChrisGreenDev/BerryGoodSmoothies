@@ -2,17 +2,21 @@ package com.example.berrygoodsmoothies.Nutrients;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.berrygoodsmoothies.ClickableRecyclerView.SmoothieItem;
 import com.example.berrygoodsmoothies.CustomMenuAdapters.CustomMenuAdapterCalcium;
@@ -94,6 +98,31 @@ public class CalciumFragment extends Fragment {
             }
         });
 
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        String fontSize = preferences.getString("fontSize", "small_font");
+
+        //Font setting
+        String font = preferences.getString("fontType", "baloo_font");
+        Typeface balooFont = ResourcesCompat.getFont(getContext(), R.font.baloo);
+        Typeface ubuntuFont = ResourcesCompat.getFont(getContext(), R.font.ubuntu);
+
+        switch(font) {
+            case "baloo_font":
+                webBtn.setTypeface(balooFont);
+                break;
+            case "ubuntu_font":
+                webBtn.setTypeface(ubuntuFont);
+                break;
+        }
+
+        //Font size setting
+        switch(fontSize){
+            case "small_font":
+                webBtn.setTextSize(getResources().getDimension(R.dimen.small_font));
+                break;
+            case "medium_font":
+                webBtn.setTextSize(getResources().getDimension(R.dimen.medium_font));
+        }
 
         return view;
     }

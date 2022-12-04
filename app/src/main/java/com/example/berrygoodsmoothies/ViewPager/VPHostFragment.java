@@ -66,6 +66,7 @@ public class VPHostFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_v_p_host, container, false);
         viewPager2 = view.findViewById(R.id.sViewPager);
         viewPager2.setAdapter(new CustomViewPagerAdapter(getActivity(), getContext()));
+
         return view;
     }
 }

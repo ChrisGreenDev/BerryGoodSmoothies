@@ -104,6 +104,47 @@ public class ContactFragment extends Fragment {
             }
         });
 
+        TextView title = view.findViewById(R.id.contactTitle);
+        TextView description = view.findViewById(R.id.contactDescription);
+        Button emailBtn = view.findViewById(R.id.emailButton);
+        Button callBtn = view.findViewById(R.id.callButton);
+        Button textBtn = view.findViewById(R.id.textButton);
+
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        String fontSize = preferences.getString("fontSize", "small_font");
+
+        //Font setting
+        String font = preferences.getString("fontType", "baloo_font");
+        Typeface balooFont = ResourcesCompat.getFont(getContext(), R.font.baloo);
+        Typeface ubuntuFont = ResourcesCompat.getFont(getContext(), R.font.ubuntu);
+
+        switch(font) {
+            case "baloo_font":
+                title.setTypeface(balooFont);
+                description.setTypeface(balooFont);
+                emailBtn.setTypeface(balooFont);
+                callBtn.setTypeface(balooFont);
+                textBtn.setTypeface(balooFont);
+                break;
+            case "ubuntu_font":
+                title.setTypeface(ubuntuFont);
+                description.setTypeface(ubuntuFont);
+                emailBtn.setTypeface(ubuntuFont);
+                callBtn.setTypeface(ubuntuFont);
+                textBtn.setTypeface(ubuntuFont);
+                break;
+        }
+
+        //Font size setting
+        switch(fontSize){
+            case "small_font":
+                description.setTextSize(getResources().getDimension(R.dimen.small_font));
+                break;
+            case "medium_font":
+                description.setTextSize(getResources().getDimension(R.dimen.medium_font));
+        }
+
+
         return view;
     }
 }
