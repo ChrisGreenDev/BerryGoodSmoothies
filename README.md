@@ -38,7 +38,9 @@ https://user-images.githubusercontent.com/114015886/205520272-9c0089ed-b405-4fdd
 ### Home Screen
 ![The home screen for my application](readmeimages/home_screenn.png)
 
+<p  align="center">
 This is the start screen to the application. It gives a brief description of what this app is intended for. At the bottom you will see a start button to get started.
+</p>
 
 ### Smoothie Menu Screen
 ![The smoothie menu screen](readmeimages/smoothie_menu_screen.png)
