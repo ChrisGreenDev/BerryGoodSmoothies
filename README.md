@@ -7,7 +7,7 @@
 
 <a  href="https://github.com/github_username/ChrisGreenDev/BerryGoodSmoothies">
 
-<img  src="readmeimages/homeimage.png"  alt="Logo"  width="80"  height="80">
+<img  src="readmeimages/home_screenn.png"  alt="Logo"  width="80"  height="80">
 
 </a>
 
