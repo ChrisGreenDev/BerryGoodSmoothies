@@ -1,8 +1,3 @@
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/chris-green-a36422251/]
-
-  
-  
-  
 
 <!-- PROJECT LOGO -->
 
@@ -28,15 +23,9 @@ Welcome! Berry Good Smoothies is an application for people looking to start eati
 
 <br  />
 
-<a  href="https://github.com/github_username/ChrisGreenDev/BerryGoodSmoothies"><strong>Explore the docs »</strong></a>
-
 <br  />
 
 <br  />
-
-<a  href="https://github.com/github_username/ChrisGreenDev/BerryGoodSmoothies">View Demo</a>
-
-·
 
 <a  href="https://github.com/github_username/ChrisGreenDev/BerryGoodSmoothies/issues">Report Bug</a>
 
@@ -51,19 +40,6 @@ Welcome! Berry Good Smoothies is an application for people looking to start eati
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
-
-  
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-  
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
-
-  
-
-<p  align="right">(<a  href="#readme-top">back to top</a>)</p>
-
 
 ### Video of Berry Good Smoothies
 https://user-images.githubusercontent.com/114015886/205520272-9c0089ed-b405-4fdd-ae5e-860aa8df6625.mp4
