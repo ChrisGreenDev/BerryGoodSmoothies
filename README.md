@@ -122,4 +122,4 @@ The settings menu offers two different settings. The first, allowing the user to
 
 Chris Green - w0795059@myscc.ca
 
-Project Link: https://github.com/github_username/ChrisGreenDev/BerryGoodSmoothies
+Project Link: https://github.com/ChrisGreenDev/BerryGoodSmoothies
