@@ -31,10 +31,10 @@ Welcome! Berry Good Smoothies is an application for people looking to start eati
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
-
+<p  align="center">
 ### Video of Berry Good Smoothies
 https://user-images.githubusercontent.com/114015886/205520272-9c0089ed-b405-4fdd-ae5e-860aa8df6625.mp4
-
+</p>
 ### Home Screen
 ![The home screen for my application](readmeimages/home_screenn.png)
 
