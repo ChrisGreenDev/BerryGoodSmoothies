@@ -92,20 +92,12 @@ The settings menu offers two different settings. The first, allowing the user to
 
 ### Built With
 
-  
-
 * Java
 
-  
-
-<p  align="right">(<a  href="#readme-top">back to top</a>)</p>
-  
 
 <!-- CONTACT -->
 
 ## Contact
-
-  
 
 Chris Green - w0795059@myscc.ca
 
