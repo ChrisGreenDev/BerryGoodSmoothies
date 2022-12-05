@@ -1,6 +1,69 @@
-# Berry Good Smoothies
+[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/chris-green-a36422251/]
 
-Welcome! Berry Good Smoothies is an application for people looking to start eating healthier. This app allows you to input nutrients you're looking to add into your everyday diet and recommend a smoothie that has the nutrients required! Simply input a single value and the app will not only show you the smoothie best fitting but it will also show how to make it with a list of ingredients. 
+  
+  
+  
+
+<!-- PROJECT LOGO -->
+
+<br  />
+
+<div  align="center">
+
+<a  href="https://github.com/github_username/ChrisGreenDev/BerryGoodSmoothies">
+
+<img  src="readmeimages/homeimage.png"  alt="Logo"  width="80"  height="80">
+
+</a>
+
+  
+
+<h3  align="center">Berry Good Smoothies</h3>
+
+  
+
+<p  align="center">
+
+Welcome! Berry Good Smoothies is an application for people looking to start eating healthier. This app allows you to input nutrients you're looking to add into your everyday diet and recommend a smoothie that has the nutrients required! Simply input a single value and the app will not only show you the smoothie best fitting but it will also show how to make it with a list of ingredients.
+
+<br  />
+
+<a  href="https://github.com/github_username/ChrisGreenDev/BerryGoodSmoothies"><strong>Explore the docs »</strong></a>
+
+<br  />
+
+<br  />
+
+<a  href="https://github.com/github_username/ChrisGreenDev/BerryGoodSmoothies">View Demo</a>
+
+·
+
+<a  href="https://github.com/github_username/ChrisGreenDev/BerryGoodSmoothies/issues">Report Bug</a>
+
+·
+
+<a  href="https://github.com/github_username/ChrisGreenDev/BerryGoodSmoothies/issues">Request Feature</a>
+
+</p>
+
+</div>
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+  
+
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
+  
+
+Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+
+  
+
+<p  align="right">(<a  href="#readme-top">back to top</a>)</p>
+
 
 ### Video of Berry Good Smoothies
 https://user-images.githubusercontent.com/114015886/205520272-9c0089ed-b405-4fdd-ae5e-860aa8df6625.mp4
@@ -60,6 +123,23 @@ THe credits screen has all images assets used in this application. All but one w
 
 The settings menu offers two different settings. The first, allowing the user to change text size from small to medium. The second choice is font. This setting gives the user the ability to change the typeface of the application from Baloo to Ubuntu.
 
-### Author
-Chris Green
-w0795059@myscc.ca
+### Built With
+
+  
+
+* Java
+
+  
+
+<p  align="right">(<a  href="#readme-top">back to top</a>)</p>
+  
+
+<!-- CONTACT -->
+
+## Contact
+
+  
+
+Chris Green - w0795059@myscc.ca
+
+Project Link: https://github.com/github_username/ChrisGreenDev/BerryGoodSmoothies
