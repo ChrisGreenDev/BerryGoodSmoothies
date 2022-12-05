@@ -24,15 +24,6 @@ Welcome! Berry Good Smoothies is an application for people looking to start eati
 <br  />
 
 <br  />
-
-<br  />
-
-<a  href="https://github.com/github_username/ChrisGreenDev/BerryGoodSmoothies/issues">Report Bug</a>
-
-·
-
-<a  href="https://github.com/github_username/ChrisGreenDev/BerryGoodSmoothies/issues">Request Feature</a>
-
 </p>
 
 </div>
